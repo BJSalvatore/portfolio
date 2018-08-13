@@ -15,6 +15,13 @@ body {
     color: #545454;
  }
 
+img{
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #545454;
+}
+
 .footer {
     position: fixed;
     left: 0;

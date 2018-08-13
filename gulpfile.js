@@ -14,20 +14,21 @@ gulp.task('copyimages', function(){
 });
 
 gulp.task('copycss', function() {
-	return gulp.src('app/css/**/*.css')
+	return gulp.src('app/css/*.css')
 		.pipe(gulp.dest('dist/css/'))
 });
 
+// function to change sass code to css
 gulp.task('sass', function() {
-	return gulp.src('app/scss/**/*.scss')
+	return gulp.src('app/scss/*.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('dist/css/'))
 });
 
 gulp.task('watch', function() {
-	gulp.watch('app/*', ['copyhtml', 'copyimages', 'sass', 'copycss'])
+	gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'sass'])
 });
 
 gulp.task('default', function(callback) {
-	runSequence(['sass', 'copycss', 'copyhtml'], callback)
+	runSequence(['sass', 'copyhtml', 'copycss'], callback)
 });
