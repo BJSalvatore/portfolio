@@ -13,16 +13,15 @@ gulp.task('copyimages', function(){
   .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('sass', function() {
-	return gulp.src('app/*.scss')
-		.pipe(sass())
-		.pipe(gulp.dest('dist/'))
+gulp.task('copycss', function() {
+	return gulp.src('app/css/**/*.css')
+		.pipe(gulp.dest('dist/css/'))
 });
 
-// function to change sass code to css
-gulp.task('copycss', function() {
-	return gulp.src('app/*.css')
-		.pipe(gulp.dest('dist/'))
+gulp.task('sass', function() {
+	return gulp.src('app/scss/**/*.scss')
+		.pipe(sass())
+		.pipe(gulp.dest('dist/css/'))
 });
 
 gulp.task('watch', function() {
