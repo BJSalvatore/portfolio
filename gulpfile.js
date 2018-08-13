@@ -26,7 +26,7 @@ gulp.task('copycss', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('app/**/*', ['copyhtml', 'copyimages', 'sass', 'copycss'])
+	gulp.watch('app/*', ['copyhtml', 'copyimages', 'sass', 'copycss'])
 });
 
 gulp.task('default', function(callback) {

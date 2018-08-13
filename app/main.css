@@ -1,8 +1,25 @@
 body {
    font-family: 'Raleway', sans-serif;
+   color: #545454;
  }
 
  h1{
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  color: #545454;
  }
+
+ h3{
+    font-weight: 500;
+    color: #545454;
+ }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffeedd;
+    color: #545454;
+    text-align: center;
+}
