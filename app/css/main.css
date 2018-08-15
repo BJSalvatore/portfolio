@@ -3,6 +3,10 @@ body {
    color: #545454;
  }
 
+ p{
+   font-size: 14px;
+ }
+
  h1{
   font-family: 'Montserrat', sans-serif;
   text-align: left;
