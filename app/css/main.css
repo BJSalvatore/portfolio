@@ -26,6 +26,12 @@ img{
   border-color: #545454;
 }
 
+.counter-item{
+  height: 20px;
+  width: auto;
+  background-color: #cccccc;
+}
+
 .footer {
     position: fixed;
     left: 0;
