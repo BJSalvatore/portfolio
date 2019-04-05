@@ -7,8 +7,12 @@ li{
 	color: #545454;
 }
 
+#udemy .container{
+  max-width: 600px;
+}
+
 .my-flex-box{
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding: 20px;
 }
