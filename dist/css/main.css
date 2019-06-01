@@ -1,4 +1,30 @@
-img{
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
+
+background {
+  width: 100%;
+  margin: 0;
+  repeat: repeat;
+
+}
+
+img {
+  float: center;
+}
+
+.sidenav img{
+  width: 200px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #A9A9A9;
+}
+
+/* .photo {
+  margin-right: 0px;
+} */
+
+.photo img{
+  width: 200px;
+  height: auto;
   padding: 5px;
   border: 1px solid #A9A9A9;
 }
@@ -7,14 +33,26 @@ li{
 	color: #545454;
 }
 
-.container{
-  max-width: 600px;
+.container-fluid {
+  display: flex;
+  background-color:#ffeedd;
+  height: auto;
+  width: 85%;
+  padding: 20px;
 }
 
-.my-flex-box{
-  max-width: 100%;
+.panel {
+  /* display: flex; */
+	/* width: 520px; */
+  float: center;
+
+}
+
+.panel-body{
+  /* display: flex; */
+  /* width: 520px; */
+  padding: 15px;
   height: auto;
-  padding: 20px;
 }
 
 .counter-item{
@@ -31,4 +69,5 @@ li{
     background-color: #ffeedd;
     color: #545454;
     text-align: center;
+    padding: 10px;
 }
