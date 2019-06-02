@@ -33,6 +33,10 @@ li{
 	color: #545454;
 }
 
+hr {
+  color: #545454 !important;
+}
+
 .container-fluid {
   display: flex;
   background-color:#ffeedd;
