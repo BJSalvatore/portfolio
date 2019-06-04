@@ -5,7 +5,13 @@
   margin: 0;
   repeat: repeat;
   background-image: url('/images/graydots.jpg');
+  padding: 0;
 
+}
+
+p {
+  font-size: 16px;
+  color: #545454;
 }
 
 .jumbotron-fluid {
@@ -15,13 +21,22 @@
   margin: 0;
 }
 
+.navbar a li{
+  justify-content: space-between;
+}
+
+
+#headshot img {
+  position: absolute;
+}
+
 .sidenav {
-  display: flex;
-  position: center;
+  /* display: flex; */
 }
 
 .sidenav a {
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .photos {
@@ -80,9 +95,9 @@ hr {
 }
 
 .panel {
-  display: block;
+  padding: 40px;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   float: center;
 }
 
@@ -101,18 +116,37 @@ hr {
     border-top: 2px solid #545454;
     height: 100px;
     position: sticky;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     width: 100%;
     background-color: #ffeedd;
     color: #545454;
     text-align: center;
-    padding: 0px;
+
 }
 
-/* @media screen and (min-width: 1125px;)
+@media screen and (max-width: 1105px;)
 {
-  h1{
+  #headshot img {
+    position: absolute;
+  }
+
+  .sidenav {
+    position: absolute;
+  }
+
+  #main {
+    position: relative;
+    columns: 2;
+  }
+
+  .colgroup {
+    visibility: collapse;
+    /* visibility: hidden; */
+  }
+
+
+  /* h1{
     position: relative;
     font-size: 36px;
   }
@@ -120,5 +154,5 @@ hr {
   h2 {
      position: relative;
     font-size: 20px;
-  }
-} */
+  } */
+}
