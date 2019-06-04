@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
 
+body {
+  color: #545454;
+  font-family: 'Montserrat';
+}
+
 .background {
   width: 100%;
   margin: 0;
@@ -11,7 +16,14 @@
 
 p {
   font-size: 16px;
-  color: #545454;
+}
+
+h1{
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 .jumbotron-fluid {
@@ -28,19 +40,6 @@ p {
 
 #headshot img {
   position: absolute;
-}
-
-.sidenav {
-  /* display: flex; */
-}
-
-.sidenav a {
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.photos {
-  display: flex;
 }
 
 img {
@@ -63,13 +62,17 @@ img {
   float: left;
 }
 
-#photos {
-  margin-top: 30px;
-}
-
-#photos img{
+#sidenav #photos {
   max-width: 200px;
 }
+
+.photos {
+  display: block;
+}
+
+/* #photos img{
+  max-width: 200px;
+} */
 
 li{
 	color: #545454;
@@ -79,17 +82,15 @@ hr {
   color: #545454 !important;
 }
 
-.container-fluid {
+.container{
   display: flex;
   background-color:#ffeedd;
   height: auto;
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
   margin-top: 40px;
   margin-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
+  padding-top: 15px;
   padding-bottom: 30px;
 
 }
@@ -125,34 +126,34 @@ hr {
 
 }
 
-@media screen and (max-width: 1105px;)
-{
-  #headshot img {
-    position: absolute;
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+
+  .photos{
+    display: none;
   }
 
-  .sidenav {
-    position: absolute;
-  }
+ }
 
-  #main {
-    position: relative;
-    columns: 2;
-  }
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
 
-  .colgroup {
-    visibility: collapse;
-    /* visibility: hidden; */
-  }
+  .photos {
+    display: none;
+    }
+ }
 
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
 
-  /* h1{
-    position: relative;
-    font-size: 36px;
-  }
-
-  h2 {
-     position: relative;
-    font-size: 20px;
-  } */
+.photos {
+  display: none;
 }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+
+ }

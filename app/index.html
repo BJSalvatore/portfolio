@@ -13,7 +13,7 @@
 </head>
 
 <body class="background">
-	<div class="jumbotron-fluid w-100" style="background-color:#ffeedd; color: #545454; font-family: 'Montserrat;'">
+	<div class="jumbotron-fluid" style="background-color:#ffeedd;">
 		<div class="row w-100 m-0">
 			<div class="col-md-2 offset-md-3">
 					<img id="headshot" src="images/headshot.png" class="img-responsive float-center" style="max-width: 180px; height: auto;"/>
@@ -25,13 +25,13 @@
 			</div>
 		</div>
 	</div>
+<div class="container">
+	<div class="row">
 
-	<div class="row pl-3 pr-3">
-		<div class="container-fluid text-align-center" style="background-color:#ffeedd; color: #545454; font-family: 'Montserrat;'">
-			<div llass="col-sm-12 col-md-10 col-lg-8 col-xl-6">
-			<div class="col-md-3">
-				<div id="sidenav" class="sidenav text-center mb-4">
-					<h3>Projects</h3>
+		<!-- <div class="container-fluid"> -->
+			<div class="col-3 justify-content-start">
+				<div id="sidenav" class="sidenav">
+					<div class="header"><h3>Projects</h3></div>
 					<img class="img-responsive" src="images/Grim-Site.png" class="mt-2"/>
 					<a href="https://grim-site.herokuapp.com/">The Grim Band Website - WIP</a>
 					<hr>
@@ -48,22 +48,24 @@
 					<a href="https://beth-menu.herokuapp.com/">Menu Example</a>
 				</div>
 			</div>
+		<!-- </div> -->
 
-			<div class="col-md-4">
-			<div class="main float-center ml-3 p-2" style="background-color:#ffeedd; color: #545454; font-family: 'Montserrat;'">
-					<h2>About Me</h2>
-					<p>As a new Web and Software Developer, I am excited about starting a new career in software development! I was raised in a small North Dakota town, along the Red River, between North Dakota and
-						Minnesota, and have lived most of my life in Minnesota. I have also lived in Pasadena, CA, Minneapolis, MN, Fargo, ND and Lexington, KY. I have two adult sons. I enjoy my pets, knitting, reading, going to concerts, operating steam engines
-						and playing bagpipes when I am not coding.</br></br>
+		<!-- <div class="container-fluid"> -->
+			<div class="col-6 justify-content-center">
+				<div class="main d-flex flex-column ml-3">
+						<div cl><h3>About Me</h3></div>
+						<p>As a new Web and Software Developer, I am excited about starting a new career in software development! I was raised in a small North Dakota town, along the Red River, between North Dakota and
+							Minnesota, and have lived most of my life in Minnesota. I have also lived in Pasadena, CA, Minneapolis, MN, Fargo, ND and Lexington, KY. I have two adult sons. I enjoy my pets, knitting, reading, going to concerts, operating steam engines
+							and playing bagpipes when I am not coding.</br></br>
 
-						I have successfully completed a 12-week intensive full stack Web Developer Bootcamp at Awesome Inc., in Lexington, KY. JavaScript, HTML, CSS, Bootstrap, Laravel, Node.js and Vue.js are some of the front-end skills I have acquired; and,
-						PHP and PostgreSQL are some of the back-end skills. I have also learned version control through GitHub and how to use Ubuntu, as my operating system. I am currently working on a website using a LAMP stack.</br></br>
+							I have successfully completed a 12-week intensive full stack Web Developer Bootcamp at Awesome Inc., in Lexington, KY. JavaScript, HTML, CSS, Bootstrap, Laravel, Node.js and Vue.js are some of the front-end skills I have acquired; and,
+							PHP and PostgreSQL are some of the back-end skills. I have also learned version control through GitHub and how to use Ubuntu, as my operating system. I am currently working on a website using a LAMP stack.</br></br>
 
-						Previous to Web Developer Bootcamp, I received an AAS in Computer Programming, from Minnesota State Community & Technical College, in Fergus Falls, MN. My education through MState included the study of various coding languages, software
-						design, information flow and processing. Java, C++, Python, and COBOL were the languages I learned. My experience with databases consists of PostgreSQL, through Awesome Inc., and MySQL and Microsoft Access, through MState.</br></br>
+							Previous to Web Developer Bootcamp, I received an AAS in Computer Programming, from Minnesota State Community & Technical College, in Fergus Falls, MN. My education through MState included the study of various coding languages, software
+							design, information flow and processing. Java, C++, Python, and COBOL were the languages I learned. My experience with databases consists of PostgreSQL, through Awesome Inc., and MySQL and Microsoft Access, through MState.</br></br>
 
-						I am looking forward to starting my career in web and software development and I come with some great references and excellent communication skills! Please feel free to contact me through the LinkedIn link or email link below. I have also
-						provided a link to my resume, my GitHub repositories and to a few of my projects. Most of the projects in my portfolio are works-in-progress and are updated on a day-to-day basis.</p>
+							I am looking forward to starting my career in web and software development and I come with some great references and excellent communication skills! Please feel free to contact me through the LinkedIn link or email link below. I have also
+							provided a link to my resume, my GitHub repositories and to a few of my projects. Most of the projects in my portfolio are works-in-progress and are updated on a day-to-day basis.</p>
 
 						<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 					  <!-- Brand -->
@@ -89,8 +91,11 @@
 					</nav>
 				</div>
 			</div>
-			<div id="photos" class="col-md-3">
-				<div class="photo text-center justify-content-center">
+		<!-- </div> -->
+
+		<!-- <div class="container-fluid text-align-center mt-3"> -->
+			<div class="col-3 justify-content-center">
+				<div id="photos" class="d-none d-sm-block d-none d-md-block d-lg-block">
 					<img class="img-responsive" src="images/Beth_2.png" class="mt-4"/>
 					<img class="img-responsive mt-3" src="images/Boys3.jpg"/>
 					<img class="img-responsive mt-3" src="images/Avery.jpg"/>
@@ -99,9 +104,11 @@
 					<img class="img-responsive mt-3" src="images/bagpipes.jpg"/>
 				</div>
 			</div>
-		</div>
+		<!-- </div> -->
+
 	</div>
-	</div>
+</div>
+
 	<div class="footer d-flex justify-content-center">
 		<div class="text-center mt-0">
 			<a href="https://github.com/demoncowgirl"><i class="fab fa-github-square fa-3x pr-3 pl-3 pt-3 pb-1" style="color: #545454"></i></a>
