@@ -15,45 +15,45 @@
 <body class="background">
 	<div class="jumbotron-fluid" style="background-color:#ffeedd;">
 		<div class="row w-100 m-0">
-			<div class="col-md-2 offset-md-3">
-					<img id="headshot" src="images/headshot.png" class="img-responsive float-center" style="max-width: 180px; height: auto;"/>
+			<div class="col-lg-2 offset-lg-2 col-md-3 offset-md-3">
+					<img id="headshot" src="images/headshot.png" class="img-fluid float-center" style="max-width: 180px; height: auto;"/>
 			</div>
-				<div id="title" class=" content col-md-4">
+			<div class="col-md-4">
+				<div id="title" class="title">
 					<h1>Beth<br>Salvatore</h1>
 					<h3>Fullstack Web & Software Developer</h3>
 				</div>
 			</div>
+			</div>
 		</div>
 	</div>
+
 <div class="container">
 	<div class="row">
 
-		<!-- <div class="container-fluid"> -->
-			<div class="col-3 justify-content-start">
-				<div id="sidenav" class="sidenav">
+			<div class="col-lg-3 col-md-3 col-sm-2 justify-content-start">
+				<div id="sidenav" class="sidenav" style="min-width: 120px; max-width: 200px;">
 					<div class="header"><h3>Projects</h3></div>
-					<img class="img-responsive" src="images/Grim-Site.png" class="mt-2"/>
+					<img class="img-fluid mt-2" src="images/Grim-Site.png"/>
 					<a href="https://grim-site.herokuapp.com/">The Grim Band Website - WIP</a>
 					<hr>
-					<img class="img-responsive" src="images/thirty.png" class="mt-2"/>
+					<img class="img-fluid" src="images/thirty.png" class="mt-2"/>
 					<a href="https://beths-thirty.herokuapp.com/">JavaScript 30 Challenge</a>
 					<hr>
-					<img class="img-responsive" src="images/NaturalPets.png" class="mt-2"/>
+					<img class="img-fluid" src="images/NaturalPets.png" class="mt-2"/>
 					<a href="https://naturalpets.herokuapp.com/">Bootcamp Final Project - WIP</a>
 					<hr>
-					<img class="img-responsive" src="images/weather-app.png" class="mt-2"/>
+					<img class="img-fluid" src="images/weather-app.png" class="mt-2"/>
 					<a href="https://beth-weather-app.herokuapp.com/">Weather App</a>
 					<hr>
-					<img class="img-responsive" src="images/menu.png" class="mt-2"/>
+					<img class="img-fluid" src="images/menu.png" class="mt-2"/>
 					<a href="https://beth-menu.herokuapp.com/">Menu Example</a>
 				</div>
 			</div>
-		<!-- </div> -->
 
-		<!-- <div class="container-fluid"> -->
-			<div class="col-6 justify-content-center">
-				<div class="main d-flex flex-column ml-3">
-						<div cl><h3>About Me</h3></div>
+			<div class="col-lg-6 col-md-6 col-sm-4 justify-content-center">
+				<div class="main d-flex flex-column">
+						<h3>About Me</h3>
 						<p>As a new Web and Software Developer, I am excited about starting a new career in software development! I was raised in a small North Dakota town, along the Red River, between North Dakota and
 							Minnesota, and have lived most of my life in Minnesota. I have also lived in Pasadena, CA, Minneapolis, MN, Fargo, ND and Lexington, KY. I have two adult sons. I enjoy my pets, knitting, reading, going to concerts, operating steam engines
 							and playing bagpipes when I am not coding.</br></br>
@@ -66,22 +66,23 @@
 
 							I am looking forward to starting my career in web and software development and I come with some great references and excellent communication skills! Please feel free to contact me through the LinkedIn link or email link below. I have also
 							provided a link to my resume, my GitHub repositories and to a few of my projects. Most of the projects in my portfolio are works-in-progress and are updated on a day-to-day basis.</p>
+					</div>
 
-						<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+					<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 					  <!-- Brand -->
 					  <p id="initial" style="font-family: 'Lobster', cursive; font-size: 32px;"><a class="navbar-brand" href="index.html">B</a></p>
 
 					  <!-- Links -->
-					  <ul class="navbar-nav">
+					  <ul class="navbar-nav d-flex flex-column">
 					    <li class="nav-item">
 					      <a class="nav-link" href="progress.html">Udemy Tutorials</a>
 					    </li>
 
 					    <!-- Dropdown -->
 					    <li class="nav-item dropdown">
-					      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					     <p><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					        Letters of Recommendation
-					      </a>
+					      </a></p>
 					      <div class="dropdown-menu">
 					        <a class="dropdown-item" href="https://drive.google.com/open?id=1IoFylOQg9qhowqLVl1qAKE1aMgFfudoV">Christine Antonelli, President, SEI LLC</a>
 					        <a class="dropdown-item" href="https://drive.google.com/open?id=1vOqaUv2PJi7HHg7dhMy5iUmQzxmxUKt5">Rohan Chatterjee, VP of Product Management, Citi</a>
@@ -90,21 +91,17 @@
 					  </ul>
 					</nav>
 				</div>
-			</div>
-		<!-- </div> -->
 
-		<!-- <div class="container-fluid text-align-center mt-3"> -->
-			<div class="col-3 justify-content-center">
-				<div id="photos" class="d-none d-sm-block d-none d-md-block d-lg-block">
-					<img class="img-responsive" src="images/Beth_2.png" class="mt-4"/>
-					<img class="img-responsive mt-3" src="images/Boys3.jpg"/>
-					<img class="img-responsive mt-3" src="images/Avery.jpg"/>
-					<img class="img-responsive mt-3" src="images/Ellie.jpg"/>
-					<img class="img-responsive mt-3" src="images/Piccolo.jpg"/>
-					<img class="img-responsive mt-3" src="images/bagpipes.jpg"/>
+			<div class="col-lg-3 col-md-3 col-sm-2">
+				<div id="photos" class="photos data-toggle-collapse d-none d-sm-block d-none d-md-block d-none d-lg-block" style="min-width: 120px; max-width: 200px;">
+					<img class="img-fluid mt-3" src="images/Beth_2.png"/>
+					<img class="img-fluid mt-3" src="images/Boys3.jpg"/>
+					<img class="img-fluid mt-3" src="images/Avery.jpg"/>
+					<img class="img-fluid mt-3" src="images/Ellie.jpg"/>
+					<img class="img-fluid mt-3" src="images/Piccolo.jpg"/>
+					<img class="img-fluid mt-3" src="images/bagpipes.jpg"/>
 				</div>
 			</div>
-		<!-- </div> -->
 
 	</div>
 </div>
