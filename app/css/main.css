@@ -33,7 +33,6 @@ h3 {
   margin: 0;
 }
 
-
 .navbar a li{
   justify-content: space-between;
 }
@@ -62,8 +61,11 @@ img {
    align-self: center;
 }
 
-.sidenave {
+.sidenav {
   position: absolute;
+  padding-bottom:
+  background-color:#ffeedd;
+  margin-bottom: 40px;
 }
 
 .main {
@@ -92,8 +94,6 @@ hr {
   display: flex;
   background-color:#ffeedd;
   height: auto;
-  /* margin-left: 60px;
-  margin-right: 60px; */
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 15px;
@@ -102,21 +102,14 @@ hr {
 }
 
 .panel {
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  width: 100%;
   float: center;
 }
 
 .panel-body{
   padding: 15px;
   height: auto;
-}
-
-.counter-item{
-  height: 20px;
-  width: auto;
-  background-color: #cccccc;
 }
 
 .footer {
@@ -137,10 +130,10 @@ hr {
 
   .sidenav {
     position: absolute;
+    columns: 1;
   }
 
   .main {
-
     columns: 1;
   }
 
@@ -226,13 +219,5 @@ hr {
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
-    /* .sidenav {
-      position: absolute;
-    }
-
-    .main {
-      position: relative;
-      columns: 2;
-    } */
 
  }
