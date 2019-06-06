@@ -56,30 +56,32 @@ img {
 .img-fluid {
   margin-left: auto;
   margin-right: auto;
-   width: auto;
+   width: 100%;
    height: auto;
    align-self: center;
 }
 
 .sidenav {
   position: absolute;
-  padding-bottom:
-  background-color:#ffeedd;
+  max-width: 100%;
+  background: #ffeedd;
   margin-bottom: 40px;
 }
 
 .main {
   position: relative;
+  max-width: 100%;
 }
 
-#title {
+.title {
   float: left;
 }
 
-#photos.photos {
+#photos img{
   display: block;
-  float: left;
-  margin-left: 0px;
+  max-width: 100%;
+  position: right;
+
 }
 
 li{
@@ -97,7 +99,7 @@ hr {
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 
 }
 
@@ -126,18 +128,17 @@ hr {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
 
   .sidenav {
     position: absolute;
-    columns: 1;
   }
 
   .main {
-    columns: 1;
+    position: relative;
   }
 
-  .photos {
+  #photos {
     display: collapse;
   }
 
@@ -154,27 +155,29 @@ hr {
     padding: 3px;
   }
 
-  .navbar {
-    columns: 12;
+
+  .headshot {
+    float: left;
   }
 
  }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .sidenav {
     position: absolute;
   }
 
   .main {
-    padding-left: 10px;
-    columns: 2;
+    position: relative;
+    columns: 3;
   }
 
-  .photos{
+  #photos {
     display: collapse;
-    }
+  }
+
 
     h3 {
       font-size: 18px;
@@ -189,10 +192,14 @@ hr {
       padding: 5px;
     }
 
+    .headshot {
+      float: left;
+    }
+
  }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
 
   .sidenav {
     position: absolute;
@@ -200,7 +207,6 @@ hr {
 
   .main {
     position: relative;
-    padding-left: 5px;
     columns: 1;
   }
 
@@ -214,10 +220,42 @@ hr {
       padding: 5px;
     }
 
+    .headshot {
+      float: right;
+    }
+
  }
 
+/* ipads */
+ @media screen and (max-width: 1024px) {
+
+     .sidenav {
+       position: absolute;
+     }
+
+     .main {
+       position: relative;
+     }
+
+   .headshot {
+     float: right;
+   }
+  }
+
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 
 
+    .sidenav {
+      position: absolute;
+    }
+
+    .main {
+      position: relative;
+    }
+
+  .headshot {
+    float: right;
+  }
  }
