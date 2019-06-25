@@ -23,7 +23,7 @@ h1{
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .jumbotron-fluid {
@@ -33,6 +33,11 @@ h3 {
   margin: 0;
 }
 
+/* nav.navbar {
+  padding: 5px;
+  border: solid 1px #A9A9A9;
+} */
+
 .navbar a li{
   justify-content: space-between;
 }
@@ -41,35 +46,30 @@ h3 {
   word-wrap: normal;
 }
 
+.headshot img{
+  max-width: 200px;
+  height: auto;
+  float: left;
+}
 
-#headshot img {
-  position: absolute;
+.title {
+  float: left;
 }
 
 img {
   border: 1px solid #A9A9A9;
   padding: 5px;
-  margin-bottom: 10px;
-
-}
-
-.img-fluid {
+  margin-bottom: 5px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-   width: 100%;
-   height: auto;
-   align-self: center;
-}
+  height: auto;
+  align-self: center;
+  width: 85%;
 
-.sidenav {
-  position: absolute;
-  max-width: 100%;
-  background: #ffeedd;
-  margin-bottom: 40px;
 }
 
 .main {
-  position: relative;
   max-width: 100%;
 }
 
@@ -79,8 +79,6 @@ img {
 
 #photos img{
   display: block;
-  max-width: 100%;
-  position: right;
 
 }
 
@@ -92,15 +90,10 @@ hr {
   color: #545454 !important;
 }
 
-.container{
-  display: flex;
+.container {
   background-color:#ffeedd;
-  height: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .panel {
@@ -128,19 +121,20 @@ hr {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
 
   .sidenav {
-    position: absolute;
+    position: relative;
   }
 
   .main {
     position: relative;
-    columns: 3;
   }
 
-  #photos {
-    display: collapse;
+  .headshot {
+    max-width: 160px;
+    float: left;
+    height: auto;
   }
 
   p {
@@ -156,15 +150,15 @@ hr {
     padding: 3px;
   }
 
-
-  .headshot {
-    float: left;
+  .footer {
+    position: fixed;
+    margin-bottom: 0px;
   }
 
  }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .sidenav {
     position: absolute;
@@ -173,6 +167,12 @@ hr {
   .main {
     position: relative;
     columns: 3;
+  }
+
+  .headshot {
+    float: left;
+    max-width: 160px;
+    height: auto;
   }
 
   #photos {
@@ -193,14 +193,11 @@ hr {
       padding: 5px;
     }
 
-    .headshot {
-      float: left;
-    }
 
  }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
 
   .sidenav {
     position: absolute;
@@ -221,31 +218,25 @@ hr {
       padding: 5px;
     }
 
-    .headshot {
-      float: right;
-    }
 
  }
 
 /* ipads */
- @media screen and (min-width: 1024px) {
+ @media screen and (max-width: 1024px) {
 
-     .sidenav {
-       position: absolute;
-     }
-
-     .main {
-       position: relative;
-     }
-
-   .headshot {
-     float: right;
+   .sidenav {
+     position: absolute;
    }
+
+   .main {
+     position: relative;
+   }
+
   }
 
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 
 
     .sidenav {
@@ -256,7 +247,4 @@ hr {
       position: relative;
     }
 
-  .headshot {
-    float: right;
-  }
  }

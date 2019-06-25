@@ -23,7 +23,7 @@ h1{
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .jumbotron-fluid {
@@ -41,46 +41,35 @@ h3 {
   word-wrap: normal;
 }
 
-
-#headshot img {
-  position: absolute;
+.headshot img{
+  max-width: 200px;
+  height: auto;
+  float: left;
 }
 
 img {
   border: 1px solid #A9A9A9;
   padding: 5px;
-  margin-bottom: 10px;
-
-}
-
-.img-fluid {
+  margin-bottom: 5px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-   width: 100%;
-   height: auto;
-   align-self: center;
-}
+  height: auto;
+  align-self: center;
+  width: 85%;
 
-.sidenav {
-  position: absolute;
-  max-width: 100%;
-  background: #ffeedd;
-  margin-bottom: 40px;
 }
 
 .main {
-  position: relative;
   max-width: 100%;
 }
 
 .title {
-  float: left;
+  position: left;
 }
 
 #photos img{
   display: block;
-  max-width: 100%;
-  position: right;
 
 }
 
@@ -92,15 +81,10 @@ hr {
   color: #545454 !important;
 }
 
-.container{
-  display: flex;
+.container {
   background-color:#ffeedd;
-  height: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
+  padding-top: 40px;
+  /* padding-bottom: 20px; */
 }
 
 .panel {
@@ -130,23 +114,12 @@ hr {
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
 
-  .sidenav {
-    position: absolute;
-  }
-
-  .main {
-    position: relative;
-  }
-
-  #photos {
-    display: collapse;
-  }
-
   p {
     font-size: 12px;
   }
 
   h3 {
+    margin-left: 20px;
     font-size: 18px;
   }
 
@@ -155,9 +128,9 @@ hr {
     padding: 3px;
   }
 
-
-  .headshot {
-    float: left;
+  .footer {
+    position: fixed;
+    margin-bottom: 0px;
   }
 
  }
@@ -165,21 +138,13 @@ hr {
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
 
-  .sidenav {
-    position: absolute;
-  }
-
-  .main {
-    position: relative;
-    columns: 3;
-  }
-
   #photos {
     display: collapse;
   }
 
 
     h3 {
+      margin-left: 20px;
       font-size: 18px;
     }
 
@@ -192,24 +157,11 @@ hr {
       padding: 5px;
     }
 
-    .headshot {
-      float: left;
-    }
 
  }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (max-width: 992px) {
-
-  .sidenav {
-    position: absolute;
-  }
-
-  .main {
-    position: relative;
-    columns: 1;
-  }
-
 
     p {
       font-size: 14px;
@@ -220,42 +172,17 @@ hr {
       padding: 5px;
     }
 
-    .headshot {
-      float: right;
-    }
 
  }
 
 /* ipads */
  @media screen and (max-width: 1024px) {
 
-     .sidenav {
-       position: absolute;
-     }
-
-     .main {
-       position: relative;
-     }
-
-   .headshot {
-     float: right;
-   }
-  }
-
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1024px) {
 
 
-    .sidenav {
-      position: absolute;
-    }
 
-    .main {
-      position: relative;
-    }
-
-  .headshot {
-    float: right;
-  }
  }
