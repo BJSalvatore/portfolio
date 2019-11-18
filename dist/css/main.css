@@ -33,11 +33,6 @@ h3 {
   margin: 0;
 }
 
-/* nav.navbar {
-  padding: 5px;
-  border: solid 1px #A9A9A9;
-} */
-
 .navbar a li{
   justify-content: space-between;
 }
@@ -46,18 +41,9 @@ h3 {
   word-wrap: normal;
 }
 
-.headshot img{
-  max-width: 200px;
-  height: auto;
-  float: left;
-}
-
-.title {
-  float: left;
-}
-
 img {
   border: 1px solid #A9A9A9;
+  background-color: #ffeedd;
   padding: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -65,8 +51,26 @@ img {
   margin-right: auto;
   height: auto;
   align-self: center;
-  width: 85%;
+  width: 80%;
 
+}
+
+#photoRow img {
+  padding: 5px;
+  margin: 5px;
+  height: auto;
+  max-width: 200px;
+}
+
+.zoom {
+  transition: transform .2s;
+  width: 240px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.80); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .main {
@@ -74,12 +78,22 @@ img {
 }
 
 .title {
-  float: left;
+  position: left;
+}
+
+#progress .panel {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+#progress .container {
+  margin-top: -35%;
 }
 
 #photos img{
   display: block;
-
+  max-width: 240px;
+  height: auto;
 }
 
 li{
@@ -93,12 +107,14 @@ hr {
 .container {
   background-color:#ffeedd;
   padding-top: 40px;
-  padding-bottom: 40px;
+  /* padding-bottom: 20px; */
 }
 
-.panel {
+.scrollable-panel {
   display: flex;
   width: 100%;
+  max-height: 400px;
+  overflow: auto;
   float: center;
 }
 
@@ -123,25 +139,12 @@ hr {
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 576px) {
 
-  .sidenav {
-    position: relative;
-  }
-
-  .main {
-    position: relative;
-  }
-
-  .headshot {
-    max-width: 160px;
-    float: left;
-    height: auto;
-  }
-
   p {
     font-size: 12px;
   }
 
   h3 {
+    margin-left: 20px;
     font-size: 18px;
   }
 
@@ -160,27 +163,13 @@ hr {
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
 
-  .sidenav {
-    position: absolute;
-  }
-
-  .main {
-    position: relative;
-    columns: 3;
-  }
-
-  .headshot {
-    float: left;
-    max-width: 160px;
-    height: auto;
-  }
-
   #photos {
     display: collapse;
   }
 
 
     h3 {
+      margin-left: 20px;
       font-size: 18px;
     }
 
@@ -199,16 +188,6 @@ hr {
 /* Large devices (desktops, 992px and up) */
 @media screen and (max-width: 992px) {
 
-  .sidenav {
-    position: absolute;
-  }
-
-  .main {
-    position: relative;
-    columns: 1;
-  }
-
-
     p {
       font-size: 14px;
     }
@@ -224,27 +203,11 @@ hr {
 /* ipads */
  @media screen and (max-width: 1024px) {
 
-   .sidenav {
-     position: absolute;
-   }
-
-   .main {
-     position: relative;
-   }
-
-  }
-
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1024px) {
 
 
-    .sidenav {
-      position: absolute;
-    }
-
-    .main {
-      position: relative;
-    }
 
  }

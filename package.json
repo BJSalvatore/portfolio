@@ -14,14 +14,15 @@
   "author": "Beth Salvatore",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^4.1.3",
-    "bootstrap-sass": "^3.3.7",
-    "gulp": "^3.9.1",
+    "bootstrap": "^4.3.1",
+    "bootstrap-sass": "^3.4.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sass": "^1.23.2"
   },
   "repository": {
     "type": "git",

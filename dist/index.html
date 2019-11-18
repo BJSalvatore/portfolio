@@ -15,7 +15,7 @@
 <body class="background">
 	<div class="jumbotron-fluid" style="background-color:#ffeedd;">
 		<div class="row">
-			<div class="col-12 col-md-4 offset-md-3 col-lg-4 offset-lg-4">
+			<div class="col-lg-10 offset-lg-4 col-md-8 offset-md-6">
 				<div id="title" class="title">
 					<h1>Beth<br>Salvatore</h1>
 					<h4>Fullstack Web & Software Developer</h4>
@@ -24,27 +24,38 @@
 		</div>
 	</div>
 
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="index.html" style="font-family: 'Lobster', cursive; font-size: 42px;">BJS</a>
+	<!-- Links -->
+	<ul class="navbar-nav">
+		<!-- Dropdown -->
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Letters of Recommendation
+			</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="https://drive.google.com/open?id=1IoFylOQg9qhowqLVl1qAKE1aMgFfudoV">Christine Antonelli, President, SEI LLC</a>
+				<a class="dropdown-item" href="https://drive.google.com/open?id=1vOqaUv2PJi7HHg7dhMy5iUmQzxmxUKt5">Rohan Chatterjee, VP of Product Management, Citi</a>
+			</div>
+		</li>
+	</ul>
+</nav>
+
 	<div class="container" style="margin-top: 40px; margin-bottom: 40px;">
-		<div class="row" style="margin-bottom: 110px;">
-			<div id="sidenav" class="col-lg-3 col-md-3 col-sm-3">
+		<div class="row">
+
+			<div id="photos" class="col-lg-3 col-md-3 col-sm-3">
 					<div class="header">
-						<h3>Projects</h3>
+						<h3>Photos</h3>
 					</div>
-					<img src="images/Grim-Site.png"></img><br>
-					<a href="https://grim-site.herokuapp.com/">The Grim Band Website</a>
-					<hr>
-					<img src="images/thirty.png"></img><br>
-					<a href="https://beths-thirty.herokuapp.com/">JavaScript 30 Challenge</a>
-					<hr>
-					<img src="images/NaturalPets.png"></img><br>
-					<a href="https://naturalpets.herokuapp.com/">Bootcamp Final Project</a>
-					<hr>
-					<img src="images/weather-app.png"></img><br>
-					<a href="https://beth-weather-app.herokuapp.com/">Weather App</a>
-					<hr>
-					<img src="images/menu.png"></img><br>
-					<a href="https://beth-menu.herokuapp.com/">Menu Example</a>
+					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/headshot.png" />
+					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Beth_2.png" />
+					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Beth_winter.jpg" />
+					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Avery.jpg" />
+					<!-- <img class="mt-3 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/bagpipes.jpg"/> -->
 				</div>
+			<!-- </div> -->
 
 			<div class="col-lg-6 col-md-6 col-sm-6 justify-content-center">
 				<div class="main d-flex flex-column pt-3">
@@ -64,39 +75,94 @@
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-3">
-					<!-- Links -->
-					<ul class="navbar-nav d-flex flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="progress.html">Udemy Tutorials</a>
-						</li>
-						<!-- Dropdown -->
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-								Recommendations
-							</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="https://drive.google.com/open?id=1IoFylOQg9qhowqLVl1qAKE1aMgFfudoV">Christine Antonelli, President, SEI LLC</a>
-								<a class="dropdown-item" href="https://drive.google.com/open?id=1vOqaUv2PJi7HHg7dhMy5iUmQzxmxUKt5">Rohan Chatterjee, VP of Product Management, Citi</a>
-							</div>
-						</li>
-					</ul>
-				</nav>
-
-				<div id="photos" class="pl-3 pr-3">
-					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/headshot.png" />
-					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Beth_2.png" />
-					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Boys3.jpg" />
-					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Avery.jpg" />
-					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Ellie.jpg" />
-					<img class="mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Piccolo.jpg" />
-					<!-- <img class="mt-3 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/bagpipes.jpg"/> -->
+			<div id="sidenav" class="col-lg-3 col-md-3 col-sm-3">
+					<div class="header">
+						<h3>Projects</h3>
+					</div>
+					<img class="zoom" src="images/Grim-Site.png" href="https://grim-site.herokuapp.com/"></img><br>
+					<a href="https://grim-site.herokuapp.com/">The Grim Band Website</a>
+					<hr>
+					<img class="zoom" src="images/thirty.png"></img><br>
+					<a href="https://beths-thirty.herokuapp.com/">JavaScript 30 Challenge</a>
+					<hr>
+					<img class="zoom" src="images/NaturalPets.png"></img><br>
+					<a href="https://naturalpets.herokuapp.com/">Bootcamp Final Project</a>
+					<hr>
+					<img class="zoom" src="images/weather-app.png"></img><br>
+					<a href="https://beth-weather-app.herokuapp.com/">Weather App</a>
+					<hr>
+					<img class="zoom" src="images/menu.png"></img><br>
+					<a href="https://beth-menu.herokuapp.com/">Menu Example</a>
 				</div>
+</div>
+			<div id="progress" class="container pb-4" style="margin-top: -40%;">
+			<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-4 justify-content-center">
+				<div class="scrollable-panel border border-secondary">
+					<div class="flex-column w-100">
+							<div class="panel-body" style="background-color:#ffeedd; color: #545454; font-family: 'Montserrat;'">
+									<h3 class="ml-3">Udemy Course Progress</h3>
+								<ul>
+									<li>Javascript - From Beginner to Pro, Abhay Talreja</li>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 79%;" aria-valuenow="79%" aria-valuemin="0" aria-valuemax="100">79%</div>
+									</div>
+									<hr>
+									<li>SQL & PostgreSQL for Beginners, Jon Avis</li>
+									<div class="progress mb-2">
+										<div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87%" aria-valuemin="0" aria-valuemax="100">87%</div>
+									</div>
+									<hr>
+									<li>C# Basics for Beginners: Learn C# Fundamentals by Coding, Mosh Hamedani</li>
+									<div class="progress mb-2">
+										<div class="progress-bar" role="progressbar" style="width: 48%;" aria-valuenow="48%" aria-valuemin="0" aria-valuemax="100">48%</div>
+									</div>
+									<hr>
+									<!-- <li>C# Intermediate: Classes Interfaces and OOP, Mosh Hamedani</li>
+											<div class="progress mb-2">
+												<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0%" aria-valuemin="0" aria-valuemax="100">0%</div>
+											</div>
+											<hr> -->
+									<li>Introduction to Modern Programming with PHP, Trevor Sawler</li>
+											<div class="progress mb-2">
+												<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25%" aria-valuemin="0" aria-valuemax="100">25%</div>
+											</div>
+											<hr>
+									<!-- <li>The Complete Wordpress Website Business Course, Rob Percival</li>
+											<div class="progress mb-2">
+												<div class="progress-bar" role="progressbar" style="width: 11%;" aria-valuenow="11%" aria-valuemin="0" aria-valuemax="100">11%</div>
+											</div>
+											<hr> -->
+									<li>Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex), Maximilian Schwarzmuller</li>
+										<div class="progress mb-2">
+											<div class="progress-bar" role="progressbar" style="width: 7%;" aria-valuenow="7%" aria-valuemin="0" aria-valuemax="100">7%</div>
+										</div>
+										<hr>
+									<!-- <li>Salesforce Platform App Builder Certification Course, Mike Wheeler</li>
+										<div class="progress mb-2">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0%" aria-valuemin="0" aria-valuemax="100">0%</div>
+										</div>
+										<hr> -->
+									<li>The Complete jQuery Course: From Beginner to Advanced, Joe Parys</li>
+									<div class="progress mb-2">
+										<div class="progress-bar" role="progressbar" style="width: 22%;" aria-valuenow="22%" aria-valuemin="0" aria-valuemax="100">22%</div>
+									</div>
+									<hr>
+							</div>
+						</div>
 			</div>
-
-		</div>
 	</div>
+
+<div class="container-fluid">
+<div id="photoRow" class="row justify-content-center">
+	<img class="zoom col-3 mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Micky.jpg" />
+	<img class="zoom col-3 mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Piccolo.jpg" />
+	<img class="zoom col-3 mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Boys3.jpg" />
+	<img class="zoom col-3 mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Ellie.jpg" />
+	<img class="zoom col-3 mt-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" src="images/Roni.jpg" />
+</div>
+</div>
+</div>
+</div>
 	<div class="footer d-flex justify-content-center">
 		<div class="text-center mt-0">
 			<a href="https://github.com/demoncowgirl"><i class="fab fa-github-square fa-3x pr-3 pl-3 pt-3 pb-1" style="color: #545454"></i></a>
@@ -123,8 +189,8 @@
 			</font>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
