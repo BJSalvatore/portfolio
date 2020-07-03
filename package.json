@@ -14,7 +14,6 @@
   "author": "Beth Salvatore",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^4.5.0",
     "bootstrap-sass": "^3.4.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
