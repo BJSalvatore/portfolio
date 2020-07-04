@@ -70,7 +70,7 @@ img {
   max-width: 200px;
 }
 
-/* .zoom {
+.zoom {
   transition: transform .2s;
   width: 240px;
   height: auto;
@@ -80,9 +80,9 @@ img {
 
 .zoom:hover {
   display: block;
-  z-index: 0;
-  transform: scale(1.80); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-} */
+  z-index: 1;
+  transform: scale(1.80); (150% zoom - Note: if the zoom is too large, it will go outside of the viewport)
+}
 
 .main {
   max-width: 100%;
@@ -170,6 +170,10 @@ hr {
     margin-bottom: 0px;
   }
 
+  #progress .scrollable-panel {
+    margin-top: -40;
+  }
+
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -194,6 +198,10 @@ hr {
       padding: 5px;
     }
 
+    #progress .container {
+      margin-top: -40;
+    }
+
 
  }
 
@@ -209,17 +217,37 @@ hr {
       padding: 5px;
     }
 
+    #progress .container {
+      margin-top: 5;
+    }
+
 
  }
 
 /* ipads */
  @media screen and (max-width: 1024px) {
 
+   #photos img{
+     display: block;
+     max-width: 120px;
+     height: auto;
+   }
+
+   .header {
+     text-align: center;
+   }
+
+   h1 .title {
+     align-self: flex-start;
+     margin-left: 15;
+   }
+
+   #progress .container {
+     margin-top: -40;
+   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1024px) {
-
-
 
  }
