@@ -99,6 +99,7 @@ img {
 
 #progress .container {
   z-index: -1;
+  padding-bottom: 10px;
 }
 
 #photos img{
@@ -170,24 +171,32 @@ hr {
     margin-bottom: 0px;
   }
 
-  #progress .scrollable-panel {
-    margin-top: -40;
-  }
-
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
 
+  #photorow #sidenav .zoom {
+    display: block;
+    max-width: 120px;
+    height: auto;
+  }
+
+  .header {
+    text-align: center;
+    margin-left: 20px;
+    font-size: 18px;
+
+  }
+
+  h1 .title {
+    align-self: flex-start;
+    margin-left: 15;
+  }
+
   #photos {
     display: collapse;
   }
-
-
-    h3 {
-      margin-left: 20px;
-      font-size: 18px;
-    }
 
     p {
       font-size: 14px;
@@ -198,8 +207,14 @@ hr {
       padding: 5px;
     }
 
-    #progress .container {
-      margin-top: -40;
+    #photorow #sidenav .zoom {
+      display: block;
+      max-width: flex;
+      height: auto;
+    }
+
+    .#progress .container {
+      margin-top: -30%;
     }
 
 
@@ -217,8 +232,14 @@ hr {
       padding: 5px;
     }
 
-    #progress .container {
-      margin-top: 5;
+    #photorow #sidenav .zoom {
+      display: block;
+      max-width: flex;
+      height: auto;
+    }
+
+    .#progress .container {
+      margin-top: -30%:
     }
 
 
@@ -227,27 +248,61 @@ hr {
 /* ipads */
  @media screen and (max-width: 1024px) {
 
-   #photos img{
-     display: block;
-     max-width: 120px;
-     height: auto;
+   body {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+   #title .title{
+     margin-left: 60;
    }
+
+     #photorow #sidenav .zoom {
+       display: block;
+       max-width: 120px;
+       height: auto;
+     }
+
 
    .header {
      text-align: center;
    }
 
-   h1 .title {
+   /* h1 .title {
      align-self: flex-start;
      margin-left: 15;
-   }
+   } */
 
-   #progress .container {
-     margin-top: -40;
+   .#progress .container {
+     max-height: 250px;
    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1366px) {
+
+  .jumbotron-fluid h1 h4 {
+    padding-left: 60;
+  }
+
+  #photorow #sidenav .zoom {
+    display: block;
+    max-width: 120px;
+    height: auto;
+  }
+
+
+.header {
+  text-align: center;
+}
+
+/* h1 .title {
+  align-self: flex-start;
+  margin-left: 15;
+} */
+
+.#progress .container {
+  padding-bottom: 100px;
+}
 
  }
