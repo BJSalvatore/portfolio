@@ -1,7 +1,14 @@
+/* light FFFCF2
+light greay CCC5B9
+brown grey 403D39
+dark 252422
+red 6a040f
+ */
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
 
 body {
-  color: #545454;
+  color: #252422;
   font-family: 'Montserrat';
 }
 
@@ -9,7 +16,7 @@ body {
   width: 100%;
   margin: 0;
   repeat: repeat;
-  background-image: url('/images/graydots.jpg');
+  background-color: rgb(106, 4, 15, 30);
   padding: 0;
 
 }
@@ -27,10 +34,25 @@ h3 {
 }
 
 .jumbotron-fluid {
+  background-color: #CCC5B9;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
   margin: 0;
+}
+
+#jumbotronPhoto img{
+  align-items: flex-start;
+  height: auto;
+  display: none;
+}
+
+.title{
+  color: #252422;
+}
+
+.navbar{
+  background-color: #403D39;
 }
 
 .navbar a li{
@@ -42,32 +64,26 @@ h3 {
 }
 
 img {
-  border: 1px solid #A9A9A9;
-  background-color: #ffeedd;
+  border: 2px solid #403D39;
+  background-color: #ffffff;
   padding: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   height: auto;
+  justify-content: center;
   align-self: center;
-  max-width: 80%;
+  max-width: 90%;
   z-index: 0;
   position: relative;
 
 }
 
-.rotate-90 {
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-}
-
 #photoRow img {
   padding: 5px;
   margin: 5px;
-  height: auto;
-  max-width: 200px;
+  /* max-width: 200px; */
 }
 
 .zoom {
@@ -92,37 +108,66 @@ img {
   position: left;
 }
 
+.header {
+  position: center;
+}
+
 #progress .panel {
+  background-color: #CCC5B9;
   margin-bottom: 40px;
   padding-bottom: 10px;
 }
 
 #progress .container {
+  display: block;
   z-index: -1;
+  background-color:#FFFFFF;
   padding-bottom: 10px;
+  margin-top: -32%;
 }
 
-#photos img{
+a {
+  text-align: center;
+}
+
+#photos #sidenav #photoRow img{
   display: block;
   max-width: 240px;
   height: auto;
+  justify-content: center;
+}
+
+#photoRow img {
+  height: 250px;
+  width: 250px;
 }
 
 li{
-	color: #545454;
+	color: #403D39;
 }
 
 hr {
-  color: #545454 !important;
+  color: #403D39 !important;
 }
 
 .container {
-  background-color:#ffeedd;
-  padding-top: 40px;
-  /* padding-bottom: 20px; */
+  background-color:#CCC5B9;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+#progress .container {
+  margin-top: -22%;
+  display: block;
+}
+
+#panel {
+  display: inline-block;
 }
 
 .scrollable-panel {
+  background-color: #CCC5B9;
+  padding: 5px;
   display: flex;
   width: 100%;
   max-height: 400px;
@@ -131,21 +176,50 @@ hr {
 }
 
 .panel-body{
+  background-color: #FFFCF2;
   padding: 15px;
   height: auto;
 }
 
 .footer {
-    border-top: 2px solid #545454;
+    border-top: 2px solid #403D39;
     height: 100px;
     position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ffeedd;
+    background-color: #FFFCF2;
     color: #545454;
     text-align: center;
     z-index: 1;
+
+}
+
+@media screen and (max-width: 320px){
+
+  #jumbotronPhoto {
+    display: block;
+  }
+
+  #photos {
+    display: none;
+  }
+
+  #panel {
+    display: none;
+  }
+
+  .header {
+    left-margin: 0;
+  }
+
+  #sidnav a {
+    text-align: center;
+  }
+
+  .main {
+    padding: 10px;
+  }
 
 }
 
@@ -170,15 +244,25 @@ hr {
     position: fixed;
     margin-bottom: 0px;
   }
+  #jumbotronPhoto {
+    display: block;
+  }
 
- }
+  #photos {
+    display: none;
+  }
+
+  #panel {
+    display: none;
+  }
+
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
 
-  #photorow #sidenav .zoom {
+  #photoRow #sidenav .zoom {
     display: block;
-    max-width: 120px;
+    max-width: flex;
     height: auto;
   }
 
@@ -194,9 +278,6 @@ hr {
     margin-left: 15;
   }
 
-  #photos {
-    display: collapse;
-  }
 
     p {
       font-size: 14px;
@@ -207,16 +288,11 @@ hr {
       padding: 5px;
     }
 
-    #photorow #sidenav .zoom {
+    #photoRow #sidenav .zoom {
       display: block;
       max-width: flex;
       height: auto;
     }
-
-    .#progress .container {
-      margin-top: -30%;
-    }
-
 
  }
 
@@ -232,15 +308,19 @@ hr {
       padding: 5px;
     }
 
-    #photorow #sidenav .zoom {
+    #photoRow #sidenav .zoom {
       display: block;
       max-width: flex;
       height: auto;
     }
 
-    .#progress .container {
-      margin-top: -30%:
+    #jumbotronPhoto {
+      display: none;
     }
+
+    /* #progress .container {
+      margin-top: -22%;
+    } */
 
 
  }
@@ -257,25 +337,26 @@ hr {
      margin-left: 60;
    }
 
-     #photorow #sidenav .zoom {
+     #photoRow #sidenav .zoom {
        display: block;
-       max-width: 120px;
+       max-width: flex;
        height: auto;
      }
-
 
    .header {
      text-align: center;
    }
 
-   /* h1 .title {
-     align-self: flex-start;
-     margin-left: 15;
-   } */
-
-   .#progress .container {
-     max-height: 250px;
+   #photoRow img {
+     height: 250px;
+     width: 250px;
    }
+
+
+   #jumbotronPhoto {
+     display: none;
+   }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -287,22 +368,16 @@ hr {
 
   #photorow #sidenav .zoom {
     display: block;
-    max-width: 120px;
+    max-width: flex;
     height: auto;
   }
-
 
 .header {
   text-align: center;
 }
 
-/* h1 .title {
-  align-self: flex-start;
-  margin-left: 15;
-} */
-
-.#progress .container {
-  padding-bottom: 100px;
+#jumbotronPhoto {
+  display: none;
 }
 
  }

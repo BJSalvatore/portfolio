@@ -1,34 +1,41 @@
+const {
+  series
+} = require('gulp');
+
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var runSequence = require('run-sequence');
+// var sass = require('gulp-sass');
+// var runSequence = require('run-sequence');
 
 // task to copy all htm/html files from app directory to dist directory
-gulp.task('copyhtml', function() {
+function copyhtml(cb) {
   return gulp.src('app/*.+(htm|html)')
-	.pipe(gulp.dest('dist/'))
- });
+    .pipe(gulp.dest('dist/'))
+}
 
-gulp.task('copyimages', function(){
+function copyimages(cb) {
   return gulp.src('app/images/*.+(png|jpg|gif)')
-  .pipe(gulp.dest('dist/images'))
-});
+    .pipe(gulp.dest('dist/images'))
+}
 
-gulp.task('copycss', function() {
-	return gulp.src('app/css/*.css')
-		.pipe(gulp.dest('dist/css/'))
-});
+function copycss(cb) {
+  return gulp.src('app/css/*.css')
+    .pipe(gulp.dest('dist/css/'))
+}
 
 // function to change sass code to css
-gulp.task('sass', function() {
-	return gulp.src('app/scss/*.scss')
-		.pipe(sass())
-		.pipe(gulp.dest('dist/css/'))
-});
+function sass(cb) {
+  return gulp.src('app/scss/*.scss')
+    // .pipe(sass())
+    .pipe(gulp.dest('dist/css/'))
+}
 
-gulp.task('watch', function() {
-	gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'sass'])
-});
+function watch(cb) {
+  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'sass'])
+}
 
-gulp.task('default', function(callback) {
-	runSequence(['sass', 'copyhtml', 'copycss'], callback)
-});
+// function
+// default (cb) {
+//   runSequence(['sass', 'copyhtml', 'copycss'], callback)
+// });
+
+exports.default = series(copyhtml, copyimages, copycss, sass);
