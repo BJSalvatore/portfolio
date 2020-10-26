@@ -16,7 +16,7 @@ body {
   width: 100%;
   margin: 0;
   repeat: repeat;
-  background-color: rgb(106, 4, 15, .9);
+  background-color: #403D39;
   padding: 0;
 
 }
@@ -30,7 +30,12 @@ h1{
 }
 
 h3 {
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.header {
+  padding: 20px;
+  align-self: flex-start;
 }
 
 .jumbotron-fluid {
@@ -43,6 +48,7 @@ h3 {
 
 #jumbotronPhoto img{
   align-items: flex-start;
+  padding-left: 20px;
   height: auto;
   display: none;
   max-width: 240px;
@@ -50,26 +56,28 @@ h3 {
 
 #skills img {
   align: flex-start;
-  max-height: 180px;
   max-width: 180px;
+  height: autol
   border: 2px solid #403D39;
   border-radius: 10px;
 }
 
 .title{
   color: #252422;
+  padding-left: 20px;
 }
 
 .navbar{
-  background-color: #403D39;
+  background-color: #6a040f;
 }
 
 .navbar-brand{
-  color: #6a040f;
+  color: #FFFCF2;
+  padding-left: 20px;
 }
 
 .nav-link {
-  color: #FFFFFF;
+  color: #FFFCF2;
 }
 
 .navbar a li{
@@ -141,7 +149,7 @@ h3 {
 }
 
 .card-title {
-  background: rgb(106, 4, 15, .8);
+  background: #6a040f;
   padding: 10px;
   border-radius: 5px 5px;
   font-weight: 800;
@@ -174,14 +182,9 @@ h3 {
 }
 
 .card img {
+  display: block;
+  height: 200px;
   width: auto;
-  height: 300px;
-}
-
-#progress .panel {
-  background-color: #CCC5B9;
-  margin-bottom: 40px;
-  padding-bottom: 10px;
 }
 
 #progress .container-fluid {
@@ -191,6 +194,34 @@ h3 {
   padding-bottom: 10px;
   margin-top: -32%;
 }
+
+#panel {
+  border-radius: 10px;
+  border: 2px solid #6a040f;
+  display: inline-block;
+  background-color: rgb(64,61,57,.4);
+  margin-bottom: 40px;
+}
+
+.scrollable-panel {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  max-height: 480px;
+  overflow: auto;
+  float: center;
+}
+
+.panel-body{
+  border-radius: 10px;
+  height: auto;
+}
+
+#projects .container-fluid {
+  align-items: justify;
+}
+
 
 a {
   text-align: center;
@@ -202,26 +233,6 @@ li{
 
 hr {
   color: #403D39 !important;
-}
-
-#panel {
-  display: inline-block;
-}
-
-.scrollable-panel {
-  background-color: #CCC5B9;
-  padding: 5px;
-  display: flex;
-  width: 100%;
-  max-height: 400px;
-  overflow: auto;
-  float: center;
-}
-
-.panel-body{
-  background-color: #FFFCF2;
-  padding: 15px;
-  height: auto;
 }
 
 .footer {
