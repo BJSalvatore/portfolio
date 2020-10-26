@@ -17,8 +17,6 @@ body {
   margin: 0;
   repeat: repeat;
   background-color: #403D39;
-  padding: 0;
-
 }
 
 p {
@@ -34,7 +32,6 @@ h3 {
 }
 
 .header {
-  padding: 20px;
   align-self: flex-start;
 }
 
@@ -46,25 +43,27 @@ h3 {
   margin: 0;
 }
 
-#jumbotronPhoto img{
-  align-items: flex-start;
-  padding-left: 20px;
-  height: auto;
-  display: none;
+.jumbotronPhoto img {
+  border: 2px solid #252422;
+  border-radius: 10px;
   max-width: 240px;
+  height: auto;
+  align: left;
 }
+
 
 #skills img {
   align: flex-start;
+  display: block;
   max-width: 180px;
-  height: autol
+  height: auto;
   border: 2px solid #403D39;
   border-radius: 10px;
 }
 
 .title{
   color: #252422;
-  padding-left: 20px;
+  text-align: left;
 }
 
 .navbar{
@@ -105,17 +104,11 @@ h3 {
 
 }
 
-.jumbotronPhoto img {
-  border: 2px solid #6a040f;
-  border-radius: 10px;
-  max-width: 240px;
-  align-self: flex-start;
-}
-
 .container{
   background-color:#CCC5B9;
   border-radius: 10px;
   padding-top: 15px;
+  align-content: justify;
 }
 
 .zoom {
@@ -141,37 +134,49 @@ h3 {
 }
 
 .header {
-  position: center;
+  text-align: center;
+}
+
+#cards .container {
+  display: flex;
 }
 
 .card-deck {
-  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .card-title {
   background: #6a040f;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px 5px;
   font-weight: 800;
   margin: 0px;
 }
+
 .card h4 {
   color: #FFFCF2;
 }
 
 .card-text {
+  margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.card-subtitle {
+  color: #252422;
+  font-weight: bold;
+  padding: 5px;
 }
 
 .card {
   background: #FFFCF2;
   border-radius: 10px;
-  border: 2px solid #000;
+  border: 2px solid #252422;
   margin: 5px;
 	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   max-width: 340px;
   min-width: 300px;
-  height: 400px;
+  height: 420px;
   padding: 5px;
   z-index: 0;
 }
@@ -187,6 +192,12 @@ h3 {
   width: auto;
 }
 
+.card-footer {
+  width: 100%;
+  height: 20px;
+  margin: 0px;
+}
+
 #progress .container-fluid {
   display: block;
   z-index: -1;
@@ -196,15 +207,13 @@ h3 {
 }
 
 #panel {
-  border-radius: 10px;
   border: 2px solid #6a040f;
   display: inline-block;
-  background-color: rgb(64,61,57,.4);
+  background-color: rgb(64,61,57,.2);
   margin-bottom: 40px;
 }
 
 .scrollable-panel {
-  border-radius: 10px;
   padding: 10px;
   display: flex;
   width: 100%;
@@ -214,7 +223,6 @@ h3 {
 }
 
 .panel-body{
-  border-radius: 10px;
   height: auto;
 }
 
@@ -236,6 +244,7 @@ hr {
 }
 
 .footer {
+    background-color: #6a040f;
     border-top: 2px solid #403D39;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -244,8 +253,8 @@ hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #FFFCF2;
-    color: #545454;
+    /* background-color: #FFFCF2; */
+    color: #FFFCF2;
     text-align: center;
     z-index: 1;
 
@@ -332,6 +341,10 @@ hr {
     a {
       font-size: 14px;
       padding: 5px;
+    }
+
+    #skills{
+      display: none;
     }
  }
 
