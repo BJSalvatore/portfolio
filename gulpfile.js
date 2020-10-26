@@ -22,6 +22,11 @@ function copycss(cb) {
     .pipe(gulp.dest('dist/css/'))
 }
 
+function copyjs(cb) {
+  return gulp.src('app/js/*.js')
+    .pipe(gulp.dest('dist/js/'))
+}
+
 // function to change sass code to css
 function sass(cb) {
   return gulp.src('app/scss/*.scss')
@@ -30,7 +35,7 @@ function sass(cb) {
 }
 
 function watch(cb) {
-  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'sass'])
+  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs', 'sass'])
 }
 
 // function
