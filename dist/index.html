@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<script type="text/javascript" src="dist/imageScript.js"></script>
+<script type="text/javascript" src="app/js/imageScript.js"></script>
 
 <body class="background">
   <div class="jumbotron-fluid">
@@ -49,18 +49,22 @@
       </ul>
     </nav>
 
-    <div class="container" style="margin-top: 40px; margin-bottom: 40px;">
+    <div class="container">
       <div class="row">
         <div id="skills" class="col-lg-3 col-md-3 col-sm-3">
-          <img class="img-fluid mt-2 mx-auto d-block" src="images/css.png" />
-          <img class="img-fluid mt-2 mx-auto d-block" src="images/git.png" />
-          <img class="img-fluid mt-2 mx-auto d-block" src="images/handlebars-js.png" />
-          <img class="img-fluid mt-2 mx-auto d-block" src="images/javascript2.png" />
-          <img class="img-fluid mt-2 mx-auto d-block" src="images/mysql2.png" />
+          <img class="img-fluid mx-auto d-block" src="images/laravel.jpg" />
+          <img class="img-fluid mx-auto d-block" src="images/php.jpg" />
+          <img class="img-fluid mx-auto d-block" src="images/javascript2.png" />
+          <img class="img-fluid mx-auto d-block" src="images/mysql2.png" />
+          <img class="img-fluid mx-auto d-block" src="images/css.png" />
+          <img class="img-fluid mx-auto d-block" src="images/html.jpg" />
+          <img class="img-fluid mx-auto d-block" src="images/git.png" />
+          <!-- <img class="img-fluid mx-auto d-block" src="images/handlebars-js.png" />
+          <img class="img-fluid mx-auto d-block" src="images/jquery.png" /> -->
         </div>
 
         <div class="col-lg-9 col-md-9 col-sm-9 justify-content-center">
-          <div class="main d-flex flex-column pt-2">
+          <div id='main' class="d-flex flex-column pt-2">
             <h3>About Me</h3>
             <p>As a new Web and Software Developer, I am excited about starting a new career in software development! I was raised in a small North Dakota town, along the Red River, between North Dakota and
               Minnesota, and have lived most of my life in Minnesota. I have also lived in Pasadena, CA, Minneapolis, MN, Fargo, ND and Lexington, KY. I have two adult sons. I enjoy my pets, knitting, reading, going to concerts, operating steam
@@ -127,8 +131,8 @@
           <div class="header">
             <h3>Projects</h3>
           </div>
-          <div class="container-fluid d-flex">
-            <div class="card-deck">
+          <div id='cards' class="container-fluid d-flex">
+            <div class="card-deck mx-auto">
               <div class="card">
                 <h4 class="card-title">The Grim Website</h4>
                 <div class="card-block">

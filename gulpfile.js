@@ -22,17 +22,26 @@ function copycss(cb) {
     .pipe(gulp.dest('dist/css/'))
 }
 
-function copyjs(cb) {
-  return gulp.src('app/js/*.js')
-    .pipe(gulp.dest('dist/js/'))
-}
+// function copyjs(cb) {
+//   return gulp.src('app/js/*.js')
+//     .pipe(gulp.dest('dist/js/'))
+// }
 
 // function to change sass code to css
 function sass(cb) {
   return gulp.src('app/scss/*.scss')
-    // .pipe(sass())
+    //.pipe(sass())
     .pipe(gulp.dest('dist/css/'))
 }
+
+// gulp.task('watch', function() {
+//   gulp.watch('./app/scss/*.scss', gulp.series('sass'));
+//   gulp.watch('./app/*.html', gulp.series('copyhtml'));
+//   gulp.watch('./app/images/*.+(png|jpg|gif)', gulp.series('copyimages'));
+//   gulp.watch('./app/css/*.css', gulp.series('copycss'));
+//   gulp.watch('./app/js/*.js', gulp.series('copyjs'));
+//
+// });
 
 function watch(cb) {
   gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs', 'sass'])
