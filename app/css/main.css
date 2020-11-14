@@ -5,28 +5,52 @@ dark 252422
 red 6a040f
  */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Rajdhani';
+}
+
+.row .flex-row{
+ padding: 40px;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+
+.container-fluid {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .background {
   width: 100%;
   margin: 0;
-  background-color: #403D39;
+  background-color: #FFFCF2;
 }
 
+
 p {
-  font-size: 16px;
+  font-size: 18px;
+  text-align: left;
 }
 
 h1{
-  font-weight: 600;
+  font-weight: 800;
+  color: #403D39;
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 600;
+  text-align: left;
+  color: #252422;
+}
+
+h6 {
+  color: #000;
+  text-align: center;
 }
 
 
@@ -38,68 +62,23 @@ li{
 	color: #403D39;
 }
 
-hr {
-  color: #403D39 !important;
+.btn {
+  background-color: rgba(106, 4, 15, 0.3);
+  text: #ffffff !important;
 }
-
 
 .header {
-  align-self: flex-start;
-}
-
-.jumbotron-fluid {
-  background-color: #CCC5B9;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  margin: 0;
-}
-
-.jumbotronPhoto img {
-  border: 2px solid #252422;
-  border-radius: 10px;
-  max-width: 240px;
-  height: auto;
-  align: left;
-}
-
-
-.container{
-  width: 80%;
-  background-color:#CCC5B9;
-  border-radius: 10px;
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-#skills img {
-  align: center;
-  display: block;
-  max-width: 140px;
-  height: auto;
-  border: 2px solid #403D39;
-  border-radius: 10px;
-}
-
-.title{
-  color: #252422;
-  text-align: left;
+  align-content: flex-start;
 }
 
 .navbar{
-  background-color: #6a040f;
-}
-
-.navbar-brand{
-  color: #FFFCF2;
-  padding-left: 20px;
+  background-color: rgba(204, 197, 185, 0.3);
+  height: 80px;
 }
 
 .nav-link {
-  color: #FFFCF2;
+  color: rgba(204, 197, 185, 0.3);
+  justify-content: space-between;
 }
 
 .navbar a li{
@@ -110,143 +89,23 @@ hr {
   word-wrap: normal;
 }
 
-.img-fluid {
-  display: block;
-  background-color: #ffffff;
-  padding: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  justify-content: center;
-  align-self: center;
-  max-width: 70%;
-  z-index: 0;
-  position: relative;
-
-}
-
-.zoom {
-  transition: transform .2s;
-  width: 240px;
-  height: auto;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.zoom:hover {
-  display: block;
-  z-index: 1;
-  transform: scale(1.80); (150% zoom - Note: if the zoom is too large, it will go outside of the viewport)
-}
-
 #main {
   max-width: 100%;
 }
 
-.title {
-  position: left;
-}
-
-.header {
+.iconify {
+  justify-content: space-between;
   text-align: center;
+  color: #6a040f;
+  width: 60px;
+  height: auto;
+  margin: 10px;
 }
 
-#cards .container {
-  align-content: space-between;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-.card-deck {
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.card-title {
-  background: #6a040f;
-  padding: 5px;
-  border-radius: 5px 5px;
-  font-weight: 800;
-  margin: 0px;
-}
-
-.card h4 {
-  color: #FFFCF2;
-}
-
-.card-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.card-subtitle {
-  color: #252422;
-  font-weight: bold;
-  padding: 5px;
-}
-
-.card {
-  background: #FFFCF2;
-  border-radius: 10px;
-  border: 2px solid #252422;
-  margin: 15px;
-	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  max-width: 340px;
-  min-width: 300px;
-  height: 420px;
-  padding: 5px;
-  z-index: 0;
-}
-
-.card-block {
-  padding: 10px;
-  height: 140px;
-}
-
-.card img {
+img {
   display: block;
   height: 200px;
   width: auto;
-}
-
-.card-footer {
-  width: 100%;
-  height: 20px;
-  margin: 0px;
-}
-
-#progress .container-fluid {
-  display: block;
-  z-index: -1;
-  background-color:#FFFFFF;
-  padding-bottom: 10px;
-  margin-top: -32%;
-}
-
-#panel {
-  border: 2px solid #6a040f;
-  display: inline-block;
-  background-color: rgb(64,61,57,.2);
-  margin-bottom: 40px;
-}
-
-.scrollable-panel {
-  padding: 10px;
-  display: flex;
-  width: 100%;
-  max-height: 480px;
-  overflow: auto;
-  float: center;
-}
-
-.panel-body{
-  height: auto;
-}
-
-#projects .container-fluid {
-  align-items: justify;
 }
 
 .footer {

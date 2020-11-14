@@ -7,237 +7,123 @@
   <title>Beth's Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
-<script type="text/javascript" src="app/js/imageScript.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-<body class="background">
-  <div class="jumbotron-fluid">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand">BJS</a>
+    <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-sm" type="submit"><a class="nav-link" href="#">CONNECT</a></button>
+          </li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
     <div class="row">
-      <div class="jumbotronPhoto">
-        <div class="col">
-          <img class="img-fluid mx-auto d-block" src="images/headshot.png" />
-          </col>
-          <div class="col">
-            <div id="title" class=" col title">
-              <h1>Beth<br>Salvatore</h1>
-              <h4>Fullstack Web & Software Developer</h4>
-            </div>
+      <div class="header">
+        <h1>Beth Salvatore</h1>
+        <h3>Developer, musician, knitter. </h3>
+      </div>
+      <p>I am a web developer based outside of Minneapolis. As a lifelong creative-type, I find that creating something amazing, from code, is the ultimate rush. If I wasn't a developer, I think I would be a detective because, next to creating, I
+        love to research and troubleshoot problems.</p>
+    </div>
+    <div class="container-fluid">
+      <div id="skills" class="d-flex justify-content-center mt-4">
+        <div class="d-flex flex-row">
+          <div class="skills">
+            <span class="iconify" data-icon="cib-laravel" data-inline="false"></span>
+            <h6>Laravel</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="cib:php" data-inline="false"></span>
+            <h6>PHP</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="teenyicons:javascript-outline" data-inline="false"></span>
+            <h6>JavaScript</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="uim:vuejs" data-inline="false"></span>
+            <h6>VueJS</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="cib:ubuntu" data-inline="false"></span>
+            <h6>Ubuntu</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="simple-icons:node-dot-js" data-inline="false"></span>
+            <h6>Node JS</h6>
+          </div>
+        </div>
+      </div>
+      <div id="icons" class="d-flex justify-content-center">
+        <div class="d-flex flex-row">
+          <div class="skills">
+            <span class="iconify" data-icon="zmdi:github-box" data-inline="false"></span>
+            <h6>Github</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="whh:mysqltwo" data-inline="false"></span>
+            <h6>MySQL</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="cib:postgresql" data-inline="false"></span>
+            <h6>PostgreSQL</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="simple-icons:css3" data-inline="false"></span>
+            <h6>CSS</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="cib:html5" data-inline="false"></span>
+            <h6>HTML</h6>
+          </div>
+          <div class="skills">
+            <span class="iconify" data-icon="vscode-icons:file-type-handlebars" data-inline="false"></span>
+            <h6>HandlebarsJS</h6>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <nav class="navbar navbar-expand-sm">
-      <!-- Brand -->
-      <a class="navbar-brand" href="index.html" style="font-family: 'Lobster', cursive; font-size: 42px;">BJS</a>
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-            Letters of Recommendation
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://drive.google.com/open?id=1IoFylOQg9qhowqLVl1qAKE1aMgFfudoV">Christine Antonelli, President, SEI LLC</a>
-            <a class="dropdown-item" href="https://drive.google.com/open?id=1vOqaUv2PJi7HHg7dhMy5iUmQzxmxUKt5">Rohan Chatterjee, VP of Product Management, Citi</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="container">
-      <div class="row">
-        <div id="skills" class="col-lg-3 col-md-3 col-sm-3">
-          <img class="img-fluid mx-auto d-block" src="images/laravel.jpg" />
-          <img class="img-fluid mx-auto d-block" src="images/php.jpg" />
-          <img class="img-fluid mx-auto d-block" src="images/javascript2.png" />
-          <img class="img-fluid mx-auto d-block" src="images/mysql2.png" />
-          <img class="img-fluid mx-auto d-block" src="images/css.png" />
-          <img class="img-fluid mx-auto d-block" src="images/html.jpg" />
-          <img class="img-fluid mx-auto d-block" src="images/git.png" />
-          <!-- <img class="img-fluid mx-auto d-block" src="images/handlebars-js.png" />
-          <img class="img-fluid mx-auto d-block" src="images/jquery.png" /> -->
+  <div id="projects" class="container-fluid">
+    <h3>PROJECTS</h3>
+    <div class="d-flex flex-row">
+      <div class="col-lg">
+        <img class="img-fluid mx-auto d-block" src="images/Grim-Site.png"></img>
+      </div>
+      <div class="col-lg">
+        <div class="description">
+          <h4>The Grim Website</h4>
+          <p>Stuff here</p>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-lg-9 col-md-9 col-sm-9 justify-content-center">
-          <div id='main' class="d-flex flex-column pt-2">
-            <h3>About Me</h3>
-            <p>As a new Web and Software Developer, I am excited about starting a new career in software development! I was raised in a small North Dakota town, along the Red River, between North Dakota and
-              Minnesota, and have lived most of my life in Minnesota. I have also lived in Pasadena, CA, Minneapolis, MN, Fargo, ND and Lexington, KY. I have two adult sons. I enjoy my pets, knitting, reading, going to concerts, operating steam
-              engines
-              and playing bagpipes when I am not coding.</br></br>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-              I have successfully completed a 12-week intensive full stack Web Developer Bootcamp at Awesome Inc., in Lexington, KY. JavaScript, HTML, CSS, Bootstrap, Laravel, Node.js and Vue.js are some of the front-end skills I have acquired; and,
-              PHP and PostgreSQL are some of the back-end skills. I have also learned version control through GitHub and how to use Ubuntu, as my operating system. I am currently working on a website using a LAMP stack.</br></br>
-
-              Previous to Web Developer Bootcamp, I received an AAS in Computer Programming, from Minnesota State Community & Technical College, in Fergus Falls, MN. My education through MState included the study of various coding languages, software
-              design, information flow and processing. Java, C++, Python, and COBOL were the languages I learned. My experience with databases consists of PostgreSQL, through Awesome Inc., and MySQL and Microsoft Access, through MState.</br></br>
-
-              I am looking forward to starting my career in web and software development and I come with some great references and excellent communication skills! Please feel free to contact me through the LinkedIn link or email link below. I have
-              also
-              provided a link to my resume, my GitHub repositories and to a few of my projects. Most of the projects in my portfolio are works-in-progress and are updated on a day-to-day basis.</p>
-          </div>
-
-          <div>
-            <div id="progress" class="container-fluid mt-2 mb-2">
-              <div id="panel" class="justify-content-center">
-                <div class="scrollable-panel border border-secondary">
-                  <div class="flex-column w-100">
-                    <div class="panel-body" style="font-family: 'Montserrat;'">
-                      <h3 class="ml-3 mt-2">Udemy Course Progress</h3>
-                      <ul>
-                        <li>Javascript - From Beginner to Pro, Abhay Talreja</li>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 79%;" aria-valuenow="79%" aria-valuemin="0" aria-valuemax="100">79%</div>
-                        </div>
-                        <hr>
-                        <li>SQL & PostgreSQL for Beginners, Jon Avis</li>
-                        <div class="progress mb-2">
-                          <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87%" aria-valuemin="0" aria-valuemax="100">87%</div>
-                        </div>
-                        <hr>
-                        <li>C# Basics for Beginners: Learn C# Fundamentals by Coding, Mosh Hamedani</li>
-                        <div class="progress mb-2">
-                          <div class="progress-bar" role="progressbar" style="width: 48%;" aria-valuenow="48%" aria-valuemin="0" aria-valuemax="100">48%</div>
-                        </div>
-                        <hr>
-                        <li>Introduction to Modern Programming with PHP, Trevor Sawler</li>
-                        <div class="progress mb-2">
-                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25%" aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-                        <hr>
-                        <li>Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex), Maximilian Schwarzmuller</li>
-                        <div class="progress mb-2">
-                          <div class="progress-bar" role="progressbar" style="width: 7%;" aria-valuenow="7%" aria-valuemin="0" aria-valuemax="100">7%</div>
-                        </div>
-                        <hr>
-                        <li>The Complete jQuery Course: From Beginner to Advanced, Joe Parys</li>
-                        <div class="progress mb-2">
-                          <div class="progress-bar" role="progressbar" style="width: 22%;" aria-valuenow="22%" aria-valuemin="0" aria-valuemax="100">22%</div>
-                        </div>
-                        <hr>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="header">
-            <h3>Projects</h3>
-          </div>
-          <div id='cards' class="container-fluid d-flex">
-            <div class="card-deck mx-auto">
-              <div class="card">
-                <h4 class="card-title">The Grim Website</h4>
-                <div class="card-block">
-                  <h6 class="card-subtitle">Laravel, PHP, JavaScript, HTML, CSS</h6>
-                  <p class="card-text">A website that I am currently working on for a California band.</p>
-                  <img class="zoom img-fluid mx-auto d-block" src="images/Grim-Site.png"></img>
-                  <div class="card-footer">
-                    <a href="https://grim-site.herokuapp.com/" target="_blank">Click Here</a>
-                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <h4 class="card-title">JavaScript Challenge</h4>
-                <div class="card-block">
-                  <h6 class="card-subtitle">JavaScript, HTML, CSS</h6>
-                  <p class="card-text">A 30-day JavaScript tutorial challeng</p>
-                  <img class="zoom img-fluid mx-auto d-block" src="images/thirty.png"></img><br>
-                  <div class="card-footer">
-                    <a href="https://beths-thirty.herokuapp.com/" target="_blank">Click Here</a>
-                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <h4 class="card-title">Bootcamp Project</h4>
-                <div class="card-block">
-                  <h6 class="card-subtitle">JavaScript, Restful APIs, HTML, CSS</h6>
-                  <p class="card-text">My bootcamp final project, incorporating restful APIs.</p>
-                  <img class="zoom img-fluid mx-auto d-block" src="images/NaturalPets.png"></img><br>
-                  <div class="card-footer">
-                    <a href="https://naturalpets.herokuapp.com/" target="_blank">Click Here</a>
-                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <h4 class="card-title">Weather App</h4>
-                <div class="card-block">
-                  <h6 class="card-subtitle">Object Oriented Programming, Restful API</h6>
-                  <p class="card-text">Object oriented programming working with a restful API.</p>
-                  <img class="zoom image-fluid mx-auto d-block" src="images/weather-app.png"></img><br>
-                  <div class="card-footer">
-                    <a href="https://beth-weather-app.herokuapp.com/" onclick="return !window.open(this.href, 'Weather App', 'width=370,height=850')" target="_blank">Click Here</a>
-                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <h4 class="card-title">Menu Example</h4>
-                <div class="card-block">
-                  <h6 class="card-subtitle"></h6>
-                  <p class="card-text">Bootcamp project.</p>
-                  <img class="zoom img-fluid mx-auto d-block" src="images/menu.png"></img><br>
-                  <div class="card-footer">
-                    <a href="https://beth-menu.herokuapp.com/" target="_blank">Click Here</a>
-                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <h4 class="card-title">Disc App</h4>
-                <div class="card-block">
-                  <h6 class="card-subtitle">Restful API</h6>
-                  <p class="card-text">A project utilizing the Discogs Restful API.</p>
-                  <!-- <img class="zoom img-fluid mx-auto d-block" src="images/Grim-Site.png"></img>
-              <div class="card-footer">
-              <a href="https://grim-site.herokuapp.com/" target="_blank">Click Here</a>
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div> -->
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div id="main" class="footer d-flex justify-content-center">
-          <div class="text-center mt-0 mb-0">
-            <a href="https://github.com/demoncowgirl" target="_blank"><i class="fab fa-github-square fa-3x pr-3 pl-3 pt-3 pb-1" style="color: #FFFCF2"></i></a>
-            <font size="2">
-              <p>GitHub</p>
-            </font>
-          </div>
-          <div class="text-center mt-0">
-            <a href="https://www.linkedin.com/in/bethjsalvatore" target="_blank"><i class="fab fa-linkedin fa-3x pr-3 pl-3 pt-3 pb-1" style="color: #FFFCF2"></i></a>
-            <font size="2">
-              <p>LinkedIn</p>
-            </font>
-          </div>
-          <div class="text-center mt-0">
-            <a href="mailto:bethsalvatore2018@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x pr-3 pl-3 pt-3 pb-1" style="color: #FFFCF2"></i></a>
-            <font size="2">
-              <p>Email</p>
-            </font>
-          </div>
-          <div class="text-center mt-0">
-            <a href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing"><i class="far fa-file fa-3x pr-3 pl-3 pt-3 pb-1" style="color: #FFFCF2;"></i></a>
-            <font size="2">
-              <p>Resume</p>
-            </font>
-          </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 <script>
