@@ -3,9 +3,9 @@
 Floral White
 #FFFCF2
 
-Sapphire blue
-#006494
-rgba(0, 100, 148)
+Marine Green
+#2f4620
+rgba(47, 70, 32)
 
 Prussian blue
 #003554
@@ -62,7 +62,7 @@ h1{
 h3 {
   font-weight: 600;
   text-align: left;
-  color: #003554;
+  color: #403D39;
   position: relative;
   line-height: 1.5em;
 }
@@ -101,13 +101,10 @@ li{
 
 .navbar{
   width: 100%;
-  background-color: rgba(0, 53, 84, 0.2);
+  background-color: rgba(47, 70, 32, 0.2);
   height: 80px;
 }
 
-.navbar-nav {
-  color: #051923;
-}
 
 .nav-link {
   color: rgba(204, 197, 185, 0.3);
@@ -132,7 +129,7 @@ li{
 .iconify {
   justify-content: space-between;
   text-align: center;
-  color: #006494;
+  color: #003554;
   width: 60px;
   height: auto;
   margin: 10px;
@@ -187,15 +184,25 @@ img {
   justify-content: space-between;
 }
 
+#contact .container-fluid {
+  max-width: 320px;
+  align-content: flex-start;
+
+}
+
 .contact .iconify {
-  margin-top: 10px;
-  margin-left: 40px;
   align-content: center;
-  justify-content: space-between;
-  align-items: flex-start;
   color: #003554;
-  width: 20px;
+  width: 30px;
   height: auto;
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+.contact p {
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 320px){
