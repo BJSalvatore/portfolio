@@ -25,6 +25,7 @@ rgba(5, 25, 35)
 body {
   font-family: 'Rajdhani';
   width: 100%;
+
 }
 
 .row .flex-row{
@@ -36,7 +37,6 @@ body {
 .container-fluid {
   margin-top: 80px;
   margin-bottom: 80px;
-  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,18 +100,21 @@ li{
 }
 
 .navbar{
-  width: 100%;
   background-color: rgba(47, 70, 32, 0.2);
   height: 80px;
+  Width: 100%;
 }
 
 
 .nav-link {
-  color: rgba(204, 197, 185, 0.3);
-  justify-content: space-between;
+  color: #051923;
 }
 
-.navbar a li{
+button a {
+  color: #051923;
+}
+
+.nav-item {
   justify-content: space-between;
   color: #051923;
   font-weight: 600;
@@ -142,7 +145,7 @@ li{
   border-radius: 5px;
   display: block;
   height: auto;
-  max-width: 75%;
+  max-width: 320px;
   float: left;
 }
 
@@ -205,6 +208,8 @@ img {
   font-size: 15px;
 }
 
+
+/* col-xs */
 @media screen and (max-width: 320px){
   .navbar{
     width: 100%;
@@ -222,61 +227,46 @@ img {
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* col-sm */
 @media screen and (max-width: 576px) {
   .navbar{
     width: 100%;
   }
 
-  .skills {
-    transform: scale(0.6);
-    padding: scale(0.6);
-  }
 
 
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* col-md */
 @media screen and (max-width: 768px) {
 
   .navbar{
       width: 100%;
     }
 
-  .skills {
-    transform: scale(0.7);
-    padding: scale(0.7;)
+  .img-fluid {
+      max-width: 200px;
   }
 
+  .skills {
+    transform: scale(0.7);
+    padding: scale(0.7);
+  }
 
 
  }
 
-/* Large devices (desktops, 992px and up) */
+/* col-lg */
 @media screen and (max-width: 992px) {
 
   .navbar{
     width: 100%;
   }
 
-  .skills {
-    transform: scale(0.5);
-    padding: scale(0.5);
+  #intro {
+    columns: 2;
   }
 
-
- }
-
-/* ipads */
- @media screen and (max-width: 1024px) {
-
-
-
-
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1366px) {
 
 
  }
