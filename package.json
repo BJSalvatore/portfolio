@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "sass": "^1.29.0"
+    "sass": "^1.30.0"
   },
   "repository": {
     "type": "git",
