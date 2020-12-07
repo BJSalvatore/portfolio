@@ -148,10 +148,14 @@ button a {
   float: left;
 }
 
+#about .img-fluid {
+  max-width: 280px;
+  float: center;
+}
+
 img {
   border-radius: 5px;
   float: right;
-
 }
 
 #intro {
@@ -203,7 +207,7 @@ img {
   text-align: center;
 }
 
-#projects .description {
+#projects #about .description {
   margin-top: 20px;
   margin-left: 0;
   justify-content: left;
@@ -248,6 +252,10 @@ portrait phones */
     display: none;
   }
 
+  #about.img_fluid {
+    display: none;
+  }
+
 }
 
 /* col-sm
@@ -257,6 +265,11 @@ landscape phones */
   #icons.container-fluid {
     display: none;
   }
+
+
+    #about.img_fluid {
+      display: none;
+    }
 
 }
 
