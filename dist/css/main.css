@@ -49,7 +49,7 @@ h1{
 
 h3 {
   font-family: 'Nanum Gothic Coding', monospace;
-  font-weight: 500;
+  font-weight: 700;
   text-align: left;
   color: #403D39;
   position: relative;
@@ -58,6 +58,7 @@ h3 {
 
 h6 {
   font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: 400;
   color: #003554;
   text-align: center;
 }
@@ -95,6 +96,12 @@ li{
   Width: 100%;
 }
 
+.navbar-brand {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: 400;
+  color: #003554;
+}
+
 
 .nav-link {
   font-family: 'Nanum Gothic Coding', monospace;
@@ -130,7 +137,7 @@ button a {
   margin: 10px;
 }
 
-.img-fluid{
+.img-fluid {
   border-style: solid;
   border-width: 2px;
   border-color: #000;
@@ -143,32 +150,63 @@ button a {
 
 img {
   border-radius: 5px;
-  opacity: 0.5;
+  float: right;
+
 }
 
-#photos img {
-  opacity: 1.0;
-  justify-content: right;
+#intro {
+  margin-top: 40px;
+}
+
+#about img {
+  margin-bottom: 10px;
 }
 
 #about h3 p {
   justify-content: left;
 }
 
-#zoom:hover .img_text {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2;
+
+.overlay {
+  display: block;
+  height: auto;
+  max-width: 320px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
 }
 
-#zoom:hover {
-  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  opacity: 1;
+.img_wrap {
+  justify-content: center;
 }
 
-.description {
-  margin-top: 40px;
-  margin-left: 40px;
+.img_wrap:hover .overlay{
+  opacity: 1.0;
+}
+
+.img_text {
+  font-style: 'Lato', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#projects .description {
+  margin-top: 20px;
+  margin-left: 0;
+  justify-content: left;
 }
 
 #badge {
@@ -179,7 +217,6 @@ img {
   padding: 5px;
   justify-content: space-between;
   background-color: #F4F4F4;
-  font: #003554;
 }
 
 #contact .container-fluid {
@@ -203,18 +240,9 @@ img {
   font-size: 15px;
 }
 
-
-/* col-xs */
-@media screen and (max-width: 320px){
-
-  #icons.container-fluid {
-    display: none;
-  }
-
-}
-
-/* col-sm */
-@media screen and (max-width: 576px) {
+/* col-xs
+portrait phones */
+@media (max-width: 575.98px){
 
   #icons.container-fluid {
     display: none;
@@ -222,8 +250,19 @@ img {
 
 }
 
-/* col-md */
-@media screen and (max-width: 768px) {
+/* col-sm
+landscape phones */
+@media (max-width: 767.98px) {
+
+  #icons.container-fluid {
+    display: none;
+  }
+
+}
+
+/* col-md
+tablets*/
+@media (max-width: 991.98px) {
 
   .navbar{
       width: 100%;
@@ -241,8 +280,9 @@ img {
 
  }
 
-/* col-lg */
-@media screen and (max-width: 992px) {
+/* col-lg
+desktops */
+@media (max-width: 1199.98px) {
 
   .navbar{
     width: 100%;
