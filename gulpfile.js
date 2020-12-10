@@ -2,6 +2,8 @@ const {
   series
 } = require('gulp');
 
+const chokidar = require('chokidar');
+
 var gulp = require('gulp');
 
 // task to copy all htm/html files from app directory to dist directory

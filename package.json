@@ -16,10 +16,12 @@
   "devDependencies": {
     "bootstrap-sass": "^3.4.1",
     "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
     "gulp-sass": "^4.1.0",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
+    "chokidar": "^3.4.3",
     "express": "^4.17.1",
     "sass": "^1.30.0"
   },
