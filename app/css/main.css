@@ -12,7 +12,7 @@ body {
 
 }
 
-.row .flex-row{
+.flex-row{
  padding-top: 40px;
  padding-bottom: 40px;
  display: flex;
@@ -85,14 +85,6 @@ li{
 	color: #051923;
 }
 
-.btn {
-  background-color: rgba(64, 61, 57, 0.2);
-}
-
-.header {
-  align-content: flex-start;
-}
-
 .navbar{
   background-color: #FBF7F4;
   height: 80px;
@@ -105,6 +97,9 @@ li{
   color: #003554;
 }
 
+#collapsibleNavbar {
+  margin-top: -50px;
+}
 
 .nav-link {
   font-family: 'Nanum Gothic Coding', monospace;
@@ -112,7 +107,7 @@ li{
   color: #051923;
 }
 
-button a {
+a {
   color: #051923;
 }
 
@@ -162,7 +157,7 @@ img {
   float: right;
 }
 
-#intro {
+#intro .header {
   margin-top: 40px;
 }
 
@@ -271,8 +266,9 @@ portrait phones */
 landscape phones */
 @media (max-width: 767.98px) {
 
-  #icons.container-fluid {
-    display: none;
+  .skills {
+    transform: scale(0.7);
+    padding: scale(0.7);
   }
 
     #about.img_fluid {

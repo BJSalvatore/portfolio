@@ -18,10 +18,10 @@
   <!-- <div class="container w-100 px-0"> -->
   <nav class="navbar navbar-expand-lg">
     <p class="navbar-brand ml-0">BJS</p>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" style="color: #FFDBC1;"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars 3x"></i></span>
     </button>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#projects">PROJECTS</a>
@@ -33,7 +33,7 @@
           <a class="nav-link" href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing">RESUME</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-sm" type="submit"><a class="nav-link" href="#connect">CONNECT</a></button>
+          <a class="nav-link" href="#connect">CONNECT</a>
         </li>
       </ul>
     </div>
@@ -42,7 +42,7 @@
 
   <div class="container-fluid justify-content-center">
     <div class="d-flex row">
-      <div id="intro" class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-1" style="text-align: left;">
+      <div id="intro" class="col-xs-12 col-sm-9 offset-sm-1 col-md-6 offset-md-3 col-lg-6" style="text-align: left;">
         <div class="header">
           <h1>Beth Salvatore</h1>
           <h3 style="color: #003554">Developer, musician, knitter. </h3>
@@ -53,7 +53,7 @@
     </div>
     <div id="icons" class="container-fluid justify-content-center">
       <div class="d-flex container-fluid justify-content-center mb-1">
-        <div class="d-flex flex-row">
+        <div class="d-flex row">
           <div class="skills">
             <span class="iconify" data-icon="cib-laravel" data-inline="false"></span>
             <h6>Laravel</h6>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <div class="d-flex flex-row">
+        <div class="d-flex row">
           <div class="skills">
             <span class="iconify" data-icon="zmdi:github-box" data-inline="false" style="color: #476985"></span>
             <h6>Github</h6>
@@ -112,8 +112,8 @@
   </div>
 
   <div id="projects" class="container-fluid">
-    <div class="d-flex flex-row flex-wrap">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3 offset-lg-3">
+    <div class="d-flex row flex-wrap">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3">
         <div class="header">
           <hr class="solid">
           <h3>PROJECTS</h3>
@@ -132,7 +132,7 @@
           <h4>The Grim Website</h4>
           <p>Stuff here</p>
         </div>
-        <div id="badge">
+        <div id="badge" class="mx-auto">
           <p><span class="badge badge-light">Laravel</span>
             <span class="badge badge-light">PHP</span>
             <span class="badge badge-light">JavaScript</span>
@@ -146,8 +146,8 @@
   </div>
 
   <div id="projects" class="container-fluid">
-    <div class="d-flex flex-row flex-wrap">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3 offset-lg-3" style="text-align: left;">
+    <div class="d-flex row flex-wrap">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3" style="text-align: left;">
         <div class="img_wrap">
           <a href="https://beths-thirty.herokuapp.com/" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/thirty.png">
@@ -162,7 +162,7 @@
           <h4>JavaScript Challenge</h4>
           <p>Stuff here</p>
         </div>
-        <div id="badge">
+        <div id="badge" class="mx-auto">
           <p><span class="badge badge-light">JavaScript</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
@@ -173,8 +173,8 @@
   </div>
 
   <div id="projects" class="container-fluid">
-    <div class="d-flex flex-row flex-wrap">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3 offset-lg-3" style="text-align: left;">
+    <div class="d-flex row flex-wrap">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3" style="text-align: left;">
         <div class="img_wrap">
           <a href="https://naturalpets.herokuapp.com/" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/NaturalPets.png">
@@ -189,13 +189,13 @@
           <h4>Bootcamp Final Project</h4>
           <p>Stuff here</p>
         </div>
-        <div id="badge">
+        <div id="badge" class="mx-auto">
           <p><span class="badge badge-light">Laravel</span>
             <span class="badge badge-light">PHP</span>
             <span class="badge badge-light">VueJS</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
-            <span class="badge badge-light">MySQL</span>
+            <!-- <span class="badge badge-light">MySQL</span> -->
           </p>
         </div>
       </div>
@@ -203,8 +203,8 @@
   </div>
 
   <div id="projects" class="container-fluid">
-    <div class="d-flex flex-row flex-wrap">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3 offset-lg-3" style="text-align: left;">
+    <div class="d-flex row flex-wrap">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3" style="text-align: left;">
         <div class="img_wrap">
           <a href="https://beth-weather-app.herokuapp.com/" onclick="return !window.open(this.href, 'Weather App', 'width=370,height=850')" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/weather-app.png">
@@ -219,7 +219,7 @@
           <h4>Weather App</h4>
           <p>Stuff here</p>
         </div>
-        <div id="badge">
+        <div id="badge" class="mx-auto">
           <p><span class="badge badge-light">JavaScript</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
@@ -230,8 +230,8 @@
   </div>
 
   <div id="connect" class="container-fluid mb-0">
-    <div class="d-flex flex-row">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-3">
+    <div class="d-flex row">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">
         <hr class="solid">
         <div class="header">
           <h3>LET'S TALK
@@ -253,7 +253,7 @@
             <p>Email</p>
           </div>
           <div class="contact">
-            <a href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing"><span class="iconify" data-icon="carbon:document" data-inline="false"></span></a>
+            <a href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing" target="_blank"><span class="iconify" data-icon="carbon:document" data-inline="false"></span></a>
             <p>Resume</p>
           </div>
         </div>
