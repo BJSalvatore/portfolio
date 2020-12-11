@@ -12,11 +12,10 @@ body {
 
 }
 
-.flex-row{
- padding-top: 40px;
- padding-bottom: 40px;
- display: flex;
- flex-wrap: wrap;
+.flex-row .row{
+ /* padding-top: 40px; */
+ /* padding-bottom: 40px; */
+ /* display: flex; */
 
 }
 
@@ -71,8 +70,8 @@ hr {
   margin-left: 142px;
   margin-right: auto;
   line-height: 1.75em;
-  width: 50%;
   top: 0;
+  width: 100%;
 
 }
 
@@ -247,6 +246,10 @@ img {
 portrait phones */
 @media (max-width: 575.98px){
 
+  .row {
+     flex-wrap: wrap;
+  }
+
   #icons.container-fluid {
     display: none;
   }
@@ -265,6 +268,9 @@ portrait phones */
 /* col-sm
 landscape phones */
 @media (max-width: 767.98px) {
+  /* .row {
+     flex-wrap: wrap;
+  } */
 
   .skills {
     transform: scale(0.7);
@@ -307,6 +313,10 @@ desktops */
 
   .navbar{
     width: 100%;
+  }
+
+  .row {
+    flex-wrap: nowrap;
   }
 
 
