@@ -15,12 +15,14 @@
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 <body class="background">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-light navbar-expand-lg">
     <p class="navbar-brand ml-0">BJS</p>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" style="color: #FFDBC1;"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon">
+        <!-- <i class="fas fa-bars 3x"></i> -->
+      </span>
     </button>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="index.html">BACK</a>
@@ -35,41 +37,35 @@
           <a class="nav-link" href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing">RESUME</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-sm" type="submit"><a class="nav-link" href="#connect">CONNECT</a></button>
+          <a class="nav-link" href="#connect">CONNECT</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid justify-content-center">
+  <div class="container-fluid">
     <div id="about" class="container-fluid mb-0">
-      <div class="d-flex flex-row">
-        <div id="about" class="col-sm-7 offset-sm-5 col-md-6 offset-md-6 col-lg-3 offset-lg-4">
-          <div class="header">
+      <div class="d-flex row flex-wrap">
+        <div id="about" class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1">
+          <div class="header justify-content-left">
             <h3>A LITTLE BIT ABOUT ME
             </h3>
           </div>
-          <img class="img-fluid mx-auto d-block" src="images/Beth_2.png">
-          <img class="img-fluid mx-auto d-block" src="images/headshot.png">
+          <img class="img-wrap mx-auto d-block" src="images/Beth_2.png">
+          <img class="img-wrap mx-auto d-block" src="images/headshot.png">
           <!-- <img class="img-fluid mx-auto d-block" src="images/Avery.jpg"> -->
         </div>
-        <div class="description col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">
-          <p>As a new Web and Software Developer, I am excited about starting my new career!
-
+        <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3 offset-lg-2">
+          <div class="description">
+          <p>As a new full stack web and software Developer, I am excited about starting a new career in software development!<br><br>
             I was raised in a small North Dakota town, along the Red River, and have lived most of my life in Minnesota. I have also lived in Pasadena, CA, Minneapolis, MN, Fargo, ND and Lexington, KY. I have two adult sons. In my spare time, when I'm not coding, I enjoy my pets, knitting, reading, going to concerts, operating steam
             engines and playing various instrument, including guitar and bagpipes.</br></br>
-
-            I have successfully completed a 12-week intensive full stack Web Developer Bootcamp at Awesome Inc., in Lexington, KY. JavaScript, HTML, CSS, Bootstrap, Laravel, Node.js and Vue.js are some of the front-end skills I have acquired; and,
-            PHP and PostgreSQL are some of the back-end skills. I have also learned version control through GitHub and how to use Ubuntu, as my operating system. I am currently working on a website using a LAMP stack.</br></br>
-
-            Previous to Web Developer Bootcamp, I received an AAS in Computer Programming, from Minnesota State Community & Technical College, in Fergus Falls, MN. My education through MState included the study of various coding languages, software
-            design, information flow and processing. Java, C++, Python, and COBOL were the languages I learned. My experience with databases consists of PostgreSQL, through Awesome Inc., and MySQL and Microsoft Access, through MState.</br></br>
-          </p>
+            Since I was very young, I was always interested in the inner workings of everything, so it isn't a suprise that so much of what I have experienced and learned has lead me to a career in software devolopment.
         </div>
       </div>
     </div>
   </div>
-
+</div>
   <!-- <div class="container-fluid"> -->
   <div class="row-fluid d-flex flex-wrap">
     <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">

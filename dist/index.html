@@ -16,10 +16,12 @@
 
 <body>
   <!-- <div class="container w-100 px-0"> -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-light navbar-expand-lg">
     <p class="navbar-brand ml-0">BJS</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"><i class="fas fa-bars 3x"></i></span>
+      <span class="navbar-toggler-icon">
+        <!-- <i class="fas fa-bars 3x"></i> -->
+      </span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
@@ -30,7 +32,7 @@
           <a class="nav-link" href="about.html">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing">RESUME</a>
+          <a class="nav-link" href="https://drive.google.com/file/d/1m9DGge0ap7RYC4LEBrz6SeYFBr5TORxP/view?usp=sharing" onclick="return !window.open(this.href,)" target="_blank">RESUME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#connect">CONNECT</a>
@@ -47,7 +49,8 @@
           <h1>Beth Salvatore</h1>
           <h3 style="color: #003554">Developer, musician, knitter. </h3>
         </div>
-        <p>I am a web developer based outside of Minneapolis. As a lifelong creative-type, I find that creating something amazing, from code, is the ultimate inspiration. If I wasn't a developer, I would love to be in research because, next to creating, I
+        <p>I am a web developer based outside of Minneapolis. As a lifelong creative-type, I find that creating something amazing, from code, is the ultimate inspiration. If I wasn't a developer, I would love to be in research because, next to
+          creating, I
           love to invistigate and troubleshoot problems.</p>
       </div>
     </div>
@@ -126,12 +129,12 @@
           </a>
         </div>
       </div>
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-2">
         <div class="description" style="margin-top: 40px;">
           <h4>The Grim Website</h4>
           <p>An in-progress band website.</p>
         </div>
-        <div id="badge" class="mx-auto">
+        <div id="badge" class="align-items-center">
           <p><span class="badge badge-light">Laravel</span>
             <span class="badge badge-light">PHP</span>
             <span class="badge badge-light">JavaScript</span>
@@ -156,12 +159,12 @@
           </a>
         </div>
       </div>
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-2">
         <div class="description">
           <h4>JavaScript Challenge</h4>
           <p>Ongoing JavaScript tutorial projects with a personal touch.</p>
         </div>
-        <div id="badge" class="mx-auto">
+        <div id="badge" class="align-items-center">
           <p><span class="badge badge-light">JavaScript</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
@@ -176,19 +179,19 @@
       <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1" style="text-align: left;">
         <div class="img_wrap">
           <a href="https://naturalpets.herokuapp.com/" target="_blank">
-            <img class="img-fluid mx-auto d-block" src="images/NaturalPets.png">
+            <img class="img-fluid mx-auto d-block" src="images/Petstop.png">
             <div class="overlay">
-              <div class="img_text">Click Here</div>
+              <div class="img_text" style="color:black;">Click Here</div>
             </div>
           </a>
         </div>
       </div>
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-2">
         <div class="description">
           <h4>Bootcamp Final Project</h4>
           <p>My bootcamp capstone project. I am currently revising the appearance and updating the API.</p>
         </div>
-        <div id="badge" class="mx-auto">
+        <div id="badge" class="align-items-center">
           <p><span class="badge badge-light">Laravel</span>
             <span class="badge badge-light">PHP</span>
             <span class="badge badge-light">VueJS</span>
@@ -207,18 +210,18 @@
         <div class="img_wrap">
           <a href="https://beth-weather-app.herokuapp.com/" onclick="return !window.open(this.href, 'Weather App', 'width=370,height=850')" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/weather-app.png">
-            <div class="overlay" >
+            <div class="overlay">
               <div class="img_text" style="color:black;">Click Here</div>
             </div>
           </a>
         </div>
       </div>
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-2">
         <div class="description">
           <h4>Weather App</h4>
           <p>My first app utilizing an API and the DOM.</p>
         </div>
-        <div id="badge" class="mx-auto">
+        <div id="badge" class="align-items-center">
           <p><span class="badge badge-light">JavaScript</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
@@ -231,7 +234,7 @@
   <div id="connect" class="container-fluid mb-0">
     <div class="d-flex row no-gutters">
       <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-3">
-       <div class="header">
+        <div class="header">
           <h3>LET'S TALK
           </h3>
           <p>I would love to talk to you about any opportunities you have that would allow me to utilize my skills to their fullest.</p>
@@ -251,7 +254,8 @@
             <p>Email</p>
           </div>
           <div class="contact">
-            <a href="https://drive.google.com/file/d/1FOsDsipjQiyMsk6McU2yCptd9SaT1ZW5/view?usp=sharing" target="_blank"><span class="iconify" data-icon="carbon:document" data-inline="false"></span></a>
+            <a href="https://drive.google.com/file/d/1m9DGge0ap7RYC4LEBrz6SeYFBr5TORxP/view?usp=sharing" onclick="return !window.open(this.href, 'Resume')" target="_blank"><span class="iconify" data-icon="carbon:document"
+                data-inline="false"></span></a>
             <p>Resume</p>
           </div>
         </div>
@@ -270,6 +274,10 @@
 <script>
   function weatherPopup() {
     var = newWin = window.open('/', 'popup', 'width=350, height=800');
+  }
+
+  function resume() {
+    var = newWin = window.open('/');
   }
 </script>
 
