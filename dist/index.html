@@ -120,7 +120,7 @@
         <div class="header">
           <h3>PROJECTS</h3>
         </div>
-        <div class="img_wrap justify-content-center">
+        <div class="img_wrap">
           <a href="https://grim-site.herokuapp.com/" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/Grim-Site.png">
             <div class="overlay">
@@ -132,15 +132,17 @@
       <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-2">
         <div class="description" style="margin-top: 40px;">
           <h4>The Grim Website</h4>
-          <p>An in-progress band website.</p>
+          <p>An in-progress band website using a LAMP stack. Bootstrap is used as my CSS library. I use Laravel Mix as my compiler and NodeJS for runtime.</p>
         </div>
-        <div id="badge" class="align-items-center">
+        <div id="badge" class="container">
           <p><span class="badge badge-light">Laravel</span>
             <span class="badge badge-light">PHP</span>
             <span class="badge badge-light">JavaScript</span>
+            <span class="badge badge-light">Bootstrap</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
             <span class="badge badge-light">MySQL</span>
+            <span class="badge badge-light">NodeJS</span>
           </p>
         </div>
       </div>
@@ -149,7 +151,7 @@
 
   <div id="projects" class="container-fluid">
     <div class="d-flex row flex-wrap no-gutters">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1" style="text-align: left;">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1">
         <div class="img_wrap">
           <a href="https://beths-thirty.herokuapp.com/" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/thirty.png">
@@ -162,9 +164,9 @@
       <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-2">
         <div class="description">
           <h4>JavaScript Challenge</h4>
-          <p>Ongoing JavaScript tutorial projects with a personal touch.</p>
+          <p>Ongoing JavaScript tutorial projects with a personal touch. I believe it is im portant to continue learning and updating mys skills, and enjoy challenges and tutorials.</p>
         </div>
-        <div id="badge" class="align-items-center">
+        <div id="badge" class="container">
           <p><span class="badge badge-light">JavaScript</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
@@ -176,7 +178,7 @@
 
   <div id="projects" class="container-fluid">
     <div class="d-flex row flex-wrap no-gutters">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1" style="text-align: left;">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1">
         <div class="img_wrap">
           <a href="https://beth-petstop.herokuapp.com/" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/Petstop.png">
@@ -191,7 +193,7 @@
           <h4>Bootcamp Final Project</h4>
           <p>My bootcamp capstone project. I am currently revising the appearance and updating the API.</p>
         </div>
-        <div id="badge" class="align-items-center">
+        <div id="badge" class="container">
           <p><span class="badge badge-light">Laravel</span>
             <span class="badge badge-light">PHP</span>
             <span class="badge badge-light">VueJS</span>
@@ -206,8 +208,8 @@
 
   <div id="projects" class="container-fluid">
     <div class="d-flex row flex-wrap no-gutters">
-      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1" style="text-align: left;">
-        <div class="img_wrap">
+      <div class="col-sm-7 offset-sm-3 col-md-6 offset-md-3 col-lg-1">
+        <div class="img_wrap" style="text-align: center;">
           <a href="https://beth-weather-app.herokuapp.com/" onclick="return !window.open(this.href, 'Weather App', 'width=370,height=850')" target="_blank">
             <img class="img-fluid mx-auto d-block" src="images/weather-app.png">
             <div class="overlay">
@@ -221,7 +223,7 @@
           <h4>Weather App</h4>
           <p>My first app utilizing an API and the DOM.</p>
         </div>
-        <div id="badge" class="align-items-center">
+        <div id="badge" class="container">
           <p><span class="badge badge-light">JavaScript</span>
             <span class="badge badge-light">HTML</span>
             <span class="badge badge-light">CSS</span>
@@ -240,7 +242,7 @@
           <p>I would love to talk to you about any opportunities you have that would allow me to utilize my skills to their fullest.</p>
         </div>
 
-        <div id="contact" class="container-fluid d-flex justify-content-left mt-1">
+        <div id="contact" class="container-fluid d-flex justify-content-left mt-1 mb-0">
           <div class="contact">
             <a href="https://github.com/demoncowgirl" target="_blank"><span class="iconify" data-icon="zmdi:github-box" data-inline="false"></span></a>
             <p>GitHub</p>
@@ -259,6 +261,11 @@
             <p>Resume</p>
           </div>
         </div>
+        <div class="credits mt-0">
+        <text>Portfolio designed by KeeYeon Won<br>
+        won.keeyeon@gmail.com<br>
+        Built by Beth Salvatore</text>
+      </div>
       </div>
     </div>
   </div>
@@ -273,7 +280,7 @@
 
 <script>
   function weatherPopup() {
-    var = newWin = window.open('/', 'popup', 'width=350, height=800');
+    var = newWin = window.open('/', 'popup', 'width=350, height=auto');
   }
 
   function resume() {

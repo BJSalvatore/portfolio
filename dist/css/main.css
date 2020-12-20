@@ -131,15 +131,21 @@ a {
 
 .img-fluid {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #000;
-  border-radius: 5px;
   display: block;
   height: auto;
   min-width: 280px;
   max-width: 320px;
-  float: left;
 }
+
+.img-wrap {
+  /* max-width: 240px; */
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .description {
   margin-left: 20px;
@@ -225,14 +231,14 @@ italic {
   justify-content: left;
 }
 
-#badge {
+#badge .container {
   text-align: center;
   align-items: center;
 }
 
 .badge {
   padding: 5px;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #F4F4F4;
 }
 
@@ -254,6 +260,15 @@ italic {
   padding: 0;
   text-align: center;
   font-size: 15px;
+}
+
+.credits text{
+  font-style: italic;
+  color: #6D6D6D;
+  display: block;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /* col-xs
