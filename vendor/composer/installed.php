@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'beth/portfolio',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '988e71b68d5f13093ff17cd2c6c7c0d44e4d8b01',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0ddce34266bd026eb7d859fe199be20a72f9d824',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'beth/portfolio' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '988e71b68d5f13093ff17cd2c6c7c0d44e4d8b01',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0ddce34266bd026eb7d859fe199be20a72f9d824',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
