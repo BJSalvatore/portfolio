@@ -25,10 +25,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  */
 class SymfonyQuestionHelper extends QuestionHelper
 {
-    /**
-     * {@inheritdoc}
-     */
-    protected function writePrompt(OutputInterface $output, Question $question)
+    protected function writePrompt(OutputInterface $output, Question $question): void
     {
         $text = OutputFormatter::escapeTrailingBackslash($question->getQuestion());
         $default = $question->getDefault();
@@ -62,7 +59,7 @@ class SymfonyQuestionHelper extends QuestionHelper
 
             case $question instanceof ChoiceQuestion:
                 $choices = $question->getChoices();
-                $text = sprintf(' <info>%s</info> [<comment>%s</comment>]:', $text, OutputFormatter::escape(isset($choices[$default]) ? $choices[$default] : $default));
+                $text = sprintf(' <info>%s</info> [<comment>%s</comment>]:', $text, OutputFormatter::escape($choices[$default] ?? $default));
 
                 break;
 
@@ -83,10 +80,7 @@ class SymfonyQuestionHelper extends QuestionHelper
         $output->write($prompt);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function writeError(OutputInterface $output, \Exception $error)
+    protected function writeError(OutputInterface $output, \Exception $error): void
     {
         if ($output instanceof SymfonyStyle) {
             $output->newLine();
@@ -100,7 +94,7 @@ class SymfonyQuestionHelper extends QuestionHelper
 
     private function getEofShortcut(): string
     {
-        if (false !== strpos(\PHP_OS, 'WIN')) {
+        if ('Windows' === \PHP_OS_FAMILY) {
             return '<comment>Ctrl+Z</comment> then <comment>Enter</comment>';
         }
 

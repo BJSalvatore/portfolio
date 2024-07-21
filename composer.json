@@ -1,5 +1,13 @@
 {
+    "name": "beth/portfolio",
+    "description": "Online portfolio",
+    "authors": [
+        {
+            "name": "Demoncowgirl",
+            "email": "bethsalvatore2018@gmail.com"
+        }
+    ],
     "require": {
-        "laravel/installer": "^4.1"
+        "laravel/installer": "^5.8"
     }
 }
