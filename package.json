@@ -5,6 +5,11 @@
   "engines": {
     "node": "10.x"
   },
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0",
+    "bootstrap": "^5.0.2",
+  },	
   "directories": {
     "doc": "docs"
   },
