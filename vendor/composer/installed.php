@@ -3,7 +3,7 @@
         'name' => 'beth/portfolio',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '7e9d5cd079a14d4c873d768ef5e6010a8f92521a',
+        'reference' => '32228cca57772c1d50992215695ae2565a5f1a80',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'beth/portfolio' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '7e9d5cd079a14d4c873d768ef5e6010a8f92521a',
+            'reference' => '32228cca57772c1d50992215695ae2565a5f1a80',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

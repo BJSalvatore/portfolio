@@ -57,6 +57,11 @@ h6 {
   font-weight: 400;
   color: #003554;
   text-align: center;
+  vertical-align: bottom;
+}
+.skills2 {
+  display: block;
+  align-items: center;
 }
 
 .header {

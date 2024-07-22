@@ -5,6 +5,7 @@ const {
 const chokidar = require('chokidar');
 
 var gulp = require('gulp');
+//var gulp sass = require('gulp-sass');
 
 // task to copy all htm/html files from app directory to dist directory
 function copyhtml(cb) {
@@ -22,8 +23,8 @@ function copycss(cb) {
     .pipe(gulp.dest('dist/css/'))
 }
 
-// function to change sass code to css
-function sass(cb) {
+//function to change sass code to css
+function convert(cb) {
   return gulp.src('app/scss/*.scss')
     //.pipe(sass())
     .pipe(gulp.dest('dist/css/'))
@@ -31,7 +32,7 @@ function sass(cb) {
 
 
 function watch(cb) {
-  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs', 'sass'])
+  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs', 'convert'])
 }
 
-exports.default = series(copyhtml, copyimages, copycss, sass);
+exports.default = series(copyhtml, copyimages, copycss, convert);
