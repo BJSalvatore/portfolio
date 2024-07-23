@@ -27,7 +27,6 @@ body {
 .background {
   width: 100%;
   margin: 0;
-  background-color: #FFFCFA;
 }
 
 p {
@@ -47,7 +46,7 @@ h3 {
   font-family: 'Nanum Gothic Coding', monospace;
   font-weight: 700;
   text-align: left;
-  color: #403D39;
+  color: #051923;
   position: relative;
   line-height: 1.5em;
 }
@@ -88,7 +87,7 @@ li {
 }
 
 .navbar {
-  background-color: #FBF7F4;
+  background-color: #E8E8E8;
   height: 80px;
   Width: 100%;
 }
@@ -134,6 +133,32 @@ a {
   margin: 10px;
 }
 
+#fixed-right .container-fluid{
+  justify-content: flex-start;
+}
+
+#fixed-left .container-fluid{
+  justify-content: flex-end;
+}
+
+#fixed-right .row {
+  background: linear-gradient(90deg, rgba(167,199,213,0), rgba(167,199,213,1));
+  width: 80%;
+  margin-left: 25%;
+  right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#fixed-left .row {
+  background: linear-gradient(90deg, rgba(167,199,213,1), rgba(167,199,213,0));
+  width: 80%;
+  margin-right: 50%;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .img-fluid {
   border-style: solid;
   border-width: 1px;
@@ -177,6 +202,7 @@ a {
 
 text {
   display: block;
+  color: #051923;
   padding: 10px;
   font-size: 12px;
   line-height: 16px;
