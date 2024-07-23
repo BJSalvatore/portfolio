@@ -188,17 +188,6 @@ italic {
   padding: 10px;
 }
 
-#testamonial1 .container{
-  height: auto;
-  width: 50%;
-}
-
-#testamonial1 .container {
-  height: auto;
-  width: 50%;
-}
-
-
 .overlay {
   display: block;
   height: auto;
@@ -231,7 +220,6 @@ italic {
 }
 
 #projects #about .description {
-  margin-top: 20px;
   margin-left: 20px;
   justify-content: left;
 }
