@@ -166,12 +166,14 @@ a {
   display: block;
   height: auto;
   min-width: 280px;
-  max-width: 320px;
+  max-width: 480px;
 }
 
 .img-wrap {
   /* max-width: 240px; */
   display:block;
+  min-width: 280px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -214,19 +216,24 @@ italic {
   padding: 10px;
 }
 
+
 .overlay {
   display: block;
+  min-width: 280px;
+  max-width: 480px;
   height: auto;
-  /* max-width: 320px; */
-  width: 320px;
-  height: auto;
-  position: absolute;
-  top: 50%;
   bottom: 0;
-  left: auto;
-  right: auto;
+  position: absolute;
   opacity: 0;
   transition: .5s ease;
+}
+
+.img_wrap {
+  display: block;
+  min-width: 280px;
+  max-width: 480px;
+  bottom: 0;
+  text-align: center;
 }
 
 .img_wrap:hover .overlay {
@@ -234,12 +241,14 @@ italic {
 }
 
 .img_text{
-  text-align: center;
+  display: block;
+  min-width: 280px;
+  max-width: 480px;
+  bottom: 0;
   font-style: 'Lato', sans-serif;
   color: white;
   font-size: 40px;
   position: absolute;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
