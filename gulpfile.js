@@ -14,7 +14,9 @@ function copyhtml(cb) {
 }
 
 function copyimages(cb) {
-  return gulp.src('app/images/*.+(png|jpg|gif)')
+  return gulp.src('app/images/*.+(png|jpg|gif)',
+  { buffer: true,
+  removeBOM: false})
     .pipe(gulp.dest('dist/images'))
 }
 
