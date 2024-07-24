@@ -24,15 +24,15 @@ function copycss(cb) {
 }
 
 //function to change sass code to css
-function convert(cb) {
+/*function convert(cb) {
   return gulp.src('app/scss/*.scss')
     //.pipe(sass())
     .pipe(gulp.dest('dist/css/'))
-}
+}*/
 
 
 function watch(cb) {
-  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs', 'convert'])
+  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs'])
 }
 
-exports.default = series(copyhtml, copyimages, copycss, convert);
+exports.default = series(copyhtml, copyimages, copycss);
