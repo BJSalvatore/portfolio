@@ -14,7 +14,9 @@ function copyhtml(cb) {
 }
 
 function copyimages(cb) {
-  return gulp.src('app/images/*.+(png|jpg|gif)')
+  return gulp.src('app/images/*.+(png|jpg|gif)',
+  { buffer: true,
+  removeBOM: false})
     .pipe(gulp.dest('dist/images'))
 }
 
@@ -23,16 +25,17 @@ function copycss(cb) {
     .pipe(gulp.dest('dist/css/'))
 }
 
+
 //function to change sass code to css
-/*function convert(cb) {
+function convert(cb) {
   return gulp.src('app/scss/*.scss')
     //.pipe(sass())
     .pipe(gulp.dest('dist/css/'))
-}*/
+}
 
 
 function watch(cb) {
-  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs'])
+  gulp.watch('app/*', ['copyhtml', 'copyimages', 'copycss', 'copyjs', 'convert'])
 }
 
-exports.default = series(copyhtml, copyimages, copycss);
+exports.default = series(copyhtml, copyimages, copycss, convert);
