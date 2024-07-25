@@ -12,5 +12,6 @@
         "laravel/framework": "^11.0",
         "nunomaduro/collision": "^8.1",
         "PHP": "^8.2.0"
+
     }
 }

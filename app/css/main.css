@@ -133,6 +133,7 @@ a {
   margin: 10px;
 }
 
+
 #fixed-right .container-fluid{
   justify-content: flex-start;
 }
@@ -142,7 +143,7 @@ a {
 }
 
 #fixed-right .row {
-  background: linear-gradient(90deg, rgba(167,199,213,0), rgba(167,199,213,1));
+  background: linear-gradient(90deg, rgba(5,25,35,0), rgba(5,25,35,.5));
   width: 80%;
   margin-left: 25%;
   right: 0;
@@ -151,7 +152,7 @@ a {
 }
 
 #fixed-left .row {
-  background: linear-gradient(90deg, rgba(167,199,213,1), rgba(167,199,213,0));
+  background: linear-gradient(90deg, rgba(5,25,35,.5), rgba(5,25,35,0));
   width: 80%;
   margin-right: 50%;
   left: 0;
@@ -207,10 +208,6 @@ a {
 .img_wrap:hover .overlay {
   opacity: 1.0;
 }
-
-max-width: 480px;
-}
-
 
 .description {
   margin-left: 20px;
