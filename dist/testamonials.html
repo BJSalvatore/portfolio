@@ -17,26 +17,33 @@
 
 <body class="background">
   <nav class="navbar navbar-light navbar-expand-lg">
-    <p class="navbar-brand ml-0 p-3">BJS</p>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" navbar-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon">
-        <!-- <i class="fas fa-bars 3x"></i> -->
-      </span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse position-relative" id="collapsibleNavbar">
+      <ul class="navbar-nav  position-absolute top-50 start-50 translate-middle">
         <li class="nav-item">
-          <a class="nav-link" href="/index.html">HOME</a>
+          <a class="nav-link" href="/">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://drive.google.com/file/d/1ljjHwONoNSAnXq06t_O3ZRyaWVRp8Qo5/view?usp=drive_link" onclick="return !window.open(this.href,)" target="_blank">RESUME</a>
+          <a class="nav-link" href="https://drive.google.com/file/d/1m9DGge0ap7RYC4LEBrz6SeYFBr5TORxP/view?usp=sharing" onclick="return !window.open(this.href,)" target="_blank">RESUME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#connect">CONNECT</a>
         </li>
       </ul>
     </div>
-  </nav>
+
+    <div class="dropdown position-absolute top-50 start-50 translate-middle">
+      <button class="navbar-toggler" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          <span>
+            <i class="fas fa-bars 3x"></i>
+          </span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="/">HOME</a></li>
+        <li><a class="dropdown-item" href="https://drive.google.com/file/d/1m9DGge0ap7RYC4LEBrz6SeYFBr5TORxP/view?usp=sharing" onclick="return !window.open(this.href,)" target="_blank">RESUME</a></li>
+        <li><a class="dropdown-item" href="#connect">CONNECT</a></li>
+      </ul>
+    </div>
+    </nav>
 
 <div class="container-fluid justify-content-left mx-auto" style="margin-top: 40px; margin-bottom: 20px;">
   <div class="d-flex row no-gutters">
@@ -168,7 +175,7 @@
           <p>Email</p>
         </div>
         <div class="contact">
-          <a href="https://drive.google.com/file/d/1AFfBKCjWxE1w9y4Y0YFLp-fHpEJuWyZN/view?usp=sharing" onclick="return !window.open(this.href, 'Resume')" target="_blank"><span class="iconify" data-icon="carbon:document"
+          <a href="https://drive.google.com/file/d/1m9DGge0ap7RYC4LEBrz6SeYFBr5TORxP/view?usp=sharing" onclick="return !window.open(this.href, 'Resume')" target="_blank"><span class="iconify" data-icon="carbon:document"
               data-inline="false"></span></a>
           <p>Resume</p>
         </div>
