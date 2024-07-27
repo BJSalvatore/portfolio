@@ -74,7 +74,7 @@ h6 {
 }
 
 #icons .row {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 #icons .img-fluid {
@@ -118,6 +118,9 @@ li {
   margin-top: -60px;
 }
 
+.dropdown-menu {
+  index: 1;
+}
 
 .dropdown-item {
   font-family: 'Nanum Gothic Coding', monospace;
