@@ -59,12 +59,26 @@ h6 {
   vertical-align: bottom;
 }
 
+
+#icons img {
+  max-width: 80px;
+}
+
+#icons text {
+  font-size: 18px;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: 400;
+  color: #003554;
+  text-align: center;
+  vertical-align: bottom;
+}
+
 #icons .row {
   max-height: 40px;
 }
 
 #icons .img-fluid {
-  max-width: 100px;
+  max-width: 10px;
   min-width: 30px;
 }
 
@@ -254,8 +268,6 @@ italic {
   padding: 10px;
 }
 
-
-
 #projects #about .description {
   margin-left: 20px;
   justify-content: left;
@@ -306,11 +318,16 @@ italic {
 portrait phones */
 @media (max-width: 575.98px) {
 
-  .row {
-    flex-wrap: wrap;
+
+  #icons .container-fluid .row {
+    display: hidden;
   }
 
-  #icons.container-fluid {
+  #icons img {
+    display: none;
+  }
+
+  #icons .col text {
     display: none;
   }
 
@@ -322,6 +339,9 @@ portrait phones */
     margin-top: 20px;
   }
 
+  button .navbar-toggler {
+    margin-left: 0;
+  }
 }
 
 
