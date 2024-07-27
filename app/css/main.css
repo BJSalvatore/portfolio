@@ -63,6 +63,11 @@ h6 {
   max-height: 40px;
 }
 
+#icons .img-fluid {
+  max-width: 100px;
+  min-width: 30px;
+}
+
 .header {
   min-width: 320px;
 }
@@ -90,17 +95,20 @@ li {
   background-color: #E8E8E8;
   height: 80px;
   Width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
-.navbar-brand {
-  font-family: 'Nanum Gothic Coding', monospace;
-  font-weight: 400;
-  color: #003554;
-}
 
 #collapsibleNavbar .navbar-collapse {
   margin-top: -60px;
+}
 
+
+.dropdown-item {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: 500;
+  color: #051923;
 }
 
 .nav-link {
@@ -116,7 +124,7 @@ a {
 .nav-item {
   justify-content: space-between;
   color: #051923;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .navbar ul {
@@ -293,6 +301,7 @@ italic {
   line-height: 16px;
 }
 
+
 /* col-xs
 portrait phones */
 @media (max-width: 575.98px) {
@@ -312,7 +321,9 @@ portrait phones */
   .description {
     margin-top: 20px;
   }
+
 }
+
 
 /* col-sm
 landscape phones */
