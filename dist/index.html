@@ -54,7 +54,7 @@
           <h3>DATA ANALYST & DEVELOPER</h3>
         </div>
         <p>I am a data analyst and web developer based between Fargo, ND, and Minneapolis, MN. As a lifelong creative-type, with a penchant for troubleshooting and organizing, I find that building something amazing, researching data and organizing from code, is the ultimate inspiration.
-          I also love to invistigate and troubleshoot problems.</p>
+          I also love to investigate and troubleshoot problems.</p>
         </div>
       </div>
     </div>
@@ -173,11 +173,12 @@
         </div>
       </div>
 
+<!--
       <div id="animation" class="container-fluid m-0">
         <div class="row d-flex justify-content-evenly">
-          <img id="arrow1" src="images/arrow-down.png">
-          <img id="arrow2" src="images/arrow-down.png">
-          <img id="arrow3" src="images/arrow-down.png">
+        <img id="arrow1" src="images/arrow-down.png">
+        <img id="arrow2" src="images/arrow-down.png">
+      <img id="arrow3" src="images/arrow-down.png">
         </div>
         <div class="row d-flex justify-content-evenly">
           <img id="arrow4" src="images/arrow-down.png">
@@ -185,13 +186,13 @@
           <img id="arrow6" src="images/arrow-down.png">
         </div>
         <div class="row d-flex justify-content-evenly">
-          <img id="arrow7" src="images/arrow-down.png">
-          <img id="arrow8" src="images/arrow-down.png">
-          <img id="arrow9" src="images/arrow-down.png">
+            <img id="arrow7" src="images/arrow-down.png">
+           <img id="arrow8" src="images/arrow-down.png">
+           <img id="arrow9" src="images/arrow-down.png">
         </div>
       </div>
 
-
+-->
 
 <!--  <div id="projects" class="container-fluid justify-left mx-auto" style="margin-bottom: 20px;">
     <div class="d-flex flex-row flex-wrap no-gutters">
@@ -335,6 +336,16 @@
 </body>
 
 <script>
+
+var items = document.getElementById("animation").getElementsByTagName("img");
+let arr = [items];
+
+function flash() {
+    console.log(arr[(Math.floor(Math.random() * arr.length))]);
+}
+flash()
+
+
 function weatherPopup() {
     var = newWin = window.open('/', 'popup', 'width=350, height=auto');
   }
