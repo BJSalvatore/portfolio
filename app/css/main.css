@@ -81,6 +81,9 @@ h6 {
   max-width: 10px;
   min-width: 30px;
 }
+#icons {
+  margin: 10;
+}
 
 .header {
   min-width: 320px;
@@ -288,6 +291,19 @@ italic {
   background-color: #F4F4F4;
 }
 
+/* arrows*/
+
+#animation img {
+  width: 80px;
+  margin: 0;
+  display: none;
+}
+
+#animation .row{
+  max-height: 100px;
+}
+
+/*contact section */
 #contact .container-fluid {
   max-width: 320px;
   align-content: flex-start;
@@ -320,8 +336,8 @@ italic {
 /* small devices (landscape phones, 576px and up) */
 @media (max-width: 576.1px) {
 
-  #icons .container-fluid .row {
-    visibility: hidden;
+  #icons {
+    margin: 0;
   }
 
   #icons img {
@@ -330,6 +346,10 @@ italic {
 
   #icons .col text {
     display: none;
+  }
+
+  #icons .row {
+    height: 0;
   }
 
   #image2 img {
@@ -351,6 +371,16 @@ italic {
   .drop-down {
     z-index: 1;
   }
+
+  #animation img {
+    display: block;
+    padding: 0;
+  }
+
+  #connect {
+    margin: 0;
+  }
+
 }
 
 
